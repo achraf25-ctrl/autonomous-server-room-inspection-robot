@@ -4,15 +4,17 @@
 
 ![ROS 2](https://img.shields.io/badge/ROS_2-Humble-blue?logo=ros)
 ![Python](https://img.shields.io/badge/Python-3.10+-green?logo=python)
-![YOLOv8](https://img.shields.io/badge/AI-YOLOv8-orange)
+![YOLOv8](https://img.shields.io/badge/AI-YOLOv8%20%2B%20OpenCV-orange)
 ![Gazebo](https://img.shields.io/badge/Simulator-Gazebo-lightblue)
-![Flask](https://img.shields.io/badge/Dashboard-Flask-black?logo=flask)
+![Flask](https://img.shields.io/badge/Dashboard-Flask%20%2B%20SocketIO-black?logo=flask)
+![MQTT](https://img.shields.io/badge/Messaging-MQTT%20Mosquitto-purple)
+![Docker](https://img.shields.io/badge/Deployment-Docker%20Compose-blue?logo=docker)
 ![License](https://img.shields.io/badge/License-MIT-yellow)
 
-**[ WRITE HERE : One sentence describing your project ]**
+**An AI-powered autonomous mobile robot that patrols server rooms, detects anomalies using computer vision, and generates automated PDF inspection reports — all in real-time.**
 
-🎥 [Demo Video](https://youtube.com/YOUR_LINK_HERE) • 
-🔗 [LinkedIn Post](https://linkedin.com/YOUR_LINK_HERE)
+🔗 [LinkedIn](https://www.linkedin.com/in/achraf-ismaili-alaoui-355b62368/) • 
+🐙 [GitHub](https://github.com/achraf25-ctrl)
 
 </div>
 
@@ -20,105 +22,149 @@
 
 ## 📌 Project Overview
 
-[ WRITE HERE : 3-4 sentences explaining what the robot does,
-  where it was developed, and what problem it solves ]
+This project implements a complete autonomous inspection system for server room environments. A **TurtleBot3** robot navigates autonomously through a simulated server room using **ROS 2 Nav2** and **SLAM Toolbox**, visits each rack following a **TSP-optimized route**, detects visual anomalies using **YOLOv8** (with an OpenCV fallback), and sends real-time alerts to a **Flask web dashboard** via **MQTT**.
 
-Example structure :
-- The robot does...
-- It was developed during...
-- The system integrates...
-- It is designed for...
+Developed during an internship at the **Ministry of Economy and Finance of Morocco** (IT Infrastructure Division) as part of a Robotics & Connected Objects Engineering degree at **ENIAD, Berkane**.
 
 ---
 
 ## ✨ Features
 
-- ✅ [ FEATURE 1 — e.g. Autonomous navigation using ROS 2 Nav2 ]
-- ✅ [ FEATURE 2 — e.g. Real-time SLAM mapping ]
-- ✅ [ FEATURE 3 — e.g. YOLOv8 anomaly detection ]
-- ✅ [ FEATURE 4 — e.g. Flask web dashboard with live alerts ]
-- ✅ [ FEATURE 5 — e.g. MQTT real-time communication ]
-- ✅ [ FEATURE 6 — e.g. Automated PDF inspection reports ]
-- ✅ [ FEATURE 7 — e.g. Docker Compose deployment ]
-- ✅ [ FEATURE 8 — e.g. Server room health score ]
-
----
-
-## 🎬 Demo
-
-### Dashboard
-![Dashboard Screenshot](screenshots/dashboard.png)
-[ REPLACE with your real screenshot path ]
-
-### Gazebo Simulation
-![Gazebo Screenshot](screenshots/gazebo.png)
-[ REPLACE with your real screenshot path ]
-
-### 🎥 Video Demo
-👉 [Watch on YouTube](https://youtube.com/YOUR_LINK_HERE)
-[ REPLACE with your real YouTube link ]
+- 🗺️ **Autonomous Navigation** — TurtleBot3 navigates a custom server room world using ROS 2 Nav2 stack
+- 🧭 **Real-Time SLAM Mapping** — simultaneous localization and mapping with SLAM Toolbox
+- 📐 **TSP-Optimized Inspection Route** — nearest-neighbor + 2-opt algorithm minimizes total travel distance across 12 racks
+- 🔍 **Dual-Mode Anomaly Detection** — YOLOv8 (when model available) + pure OpenCV HSV fallback (always works)
+- 🚨 **Priority Re-routing** — critical anomalies trigger immediate robot re-visit before continuing the patrol
+- 📡 **Real-Time MQTT Alerts** — anomalies published to `inspection/alerts` topic and pushed to dashboard via Socket.IO
+- 📊 **Web Dashboard** — live rack status grid (OK / Warning / Critical), alert feed, health score
+- 📄 **Automated PDF Reports** — generated automatically at end of patrol via ReportLab
+- 🐳 **Docker Compose Deployment** — one command starts MQTT broker + dashboard
+- 🎮 **Demo Mode** — `demo_simulate_inspection.py` simulates a full inspection without ROS 2
 
 ---
 
 ## 🏗️ System Architecture
 
 ```
-[ DESCRIBE YOUR ARCHITECTURE HERE ]
+┌─────────────────────────────────────────────────────────────┐
+│                    GAZEBO SIMULATION                        │
+│   server_room.world │ TurtleBot3 waffle_pi                  │
+│   RGB Camera (rgb_camera.xacro) │ Virtual LiDAR             │
+└──────────────────────┬──────────────────────────────────────┘
+                       │ /camera/image_raw  /scan  /odom
+                       ▼
+┌─────────────────────────────────────────────────────────────┐
+│                    ROS 2 NODES                              │
+│                                                             │
+│  inspection_commander ──TSP──► Nav2 ──► /cmd_vel           │
+│         │ /anomaly_event                                     │
+│         ▼                                                   │
+│  anomaly_detector ◄── /camera/image_raw                    │
+│  (YOLOv8 + OpenCV)                                         │
+│         │                                                   │
+│  SLAM Toolbox ──► /map                                      │
+└──────────────────────┬──────────────────────────────────────┘
+                       │ MQTT  inspection/alerts
+                       ▼
+┌─────────────────────────────────────────────────────────────┐
+│              MOSQUITTO MQTT BROKER (port 1883)              │
+└──────────────────────┬──────────────────────────────────────┘
+                       │ Socket.IO
+                       ▼
+┌─────────────────────────────────────────────────────────────┐
+│              FLASK WEB DASHBOARD (port 5000)                │
+│   Rack Grid │ Alert Feed │ Health Score │ PDF Reports       │
+└─────────────────────────────────────────────────────────────┘
+```
 
-Example :
+### ROS 2 Node Graph
 
-Gazebo Simulation
-      ↓
-ROS 2 Nodes (Nav2 + SLAM + YOLOv8)
-      ↓
-MQTT Broker
-      ↓
-Flask Dashboard
-      ↓
-PDF Report Generator
+```mermaid
+graph TD
+    A[Gazebo + server_room.world] -->|/camera/image_raw| B[anomaly_detector]
+    A -->|/scan| C[SLAM Toolbox]
+    A -->|/odom| D[Nav2]
+    B -->|/anomaly_event AnomalyEvent.msg| E[inspection_commander]
+    B -->|MQTT inspection/alerts| F[Flask Dashboard]
+    C -->|/map| D
+    D -->|/cmd_vel| A
+    E -->|Nav2 waypoints TSP| D
+    E -->|POST /api/generate_report| F
+    F -->|PDF| G[reports/inspection_report_*.pdf]
 ```
 
 ---
 
 ## 🛠️ Technology Stack
 
-| Layer | Technology | Purpose |
-|---|---|---|
-| Simulation | [ e.g. Gazebo ] | [ e.g. 3D physics simulation ] |
-| Robot | [ e.g. TurtleBot3 ] | [ e.g. Mobile robot platform ] |
-| Framework | [ e.g. ROS 2 Humble ] | [ e.g. Robot middleware ] |
-| Navigation | [ e.g. Nav2 ] | [ e.g. Autonomous path planning ] |
-| Mapping | [ e.g. SLAM Toolbox ] | [ e.g. Real-time mapping ] |
-| AI Detection | [ e.g. YOLOv8 ] | [ e.g. Anomaly detection ] |
-| Vision | [ e.g. OpenCV ] | [ e.g. Image processing ] |
-| Backend | [ e.g. Flask ] | [ e.g. Web server and API ] |
-| Messaging | [ e.g. MQTT Mosquitto ] | [ e.g. Real-time alerts ] |
-| Reports | [ e.g. ReportLab ] | [ e.g. PDF generation ] |
-| Container | [ e.g. Docker Compose ] | [ e.g. Deployment ] |
+| Layer | Technology | Version | Purpose |
+|---|---|---|---|
+| Simulation | Gazebo | Classic | 3D physics simulation |
+| Robot | TurtleBot3 waffle_pi | — | Mobile robot with RGB camera |
+| Framework | ROS 2 | Humble | Robot middleware |
+| Navigation | Nav2 | Humble | Autonomous path planning + obstacle avoidance |
+| Mapping | SLAM Toolbox | Humble | Online async SLAM |
+| Route Planning | TSP (nearest-neighbor + 2-opt) | custom | Optimal rack visit order |
+| AI Detection | YOLOv8 (Ultralytics) | 8.x | Anomaly detection (optional) |
+| Vision Fallback | OpenCV HSV thresholding | 4.10 | Red LED + open rack detection |
+| Messaging | Paho MQTT + Mosquitto | 1.6 / 2.x | Real-time alert communication |
+| Backend | Flask + Flask-SocketIO | 3.0 / 5.3 | Web server + real-time push |
+| Reports | ReportLab | 4.2 | Automated PDF generation |
+| Container | Docker + Docker Compose | 3.8 | One-command deployment |
+| OS | Ubuntu | 22.04 | Operating system |
 
 ---
 
 ## 📁 Project Structure
 
 ```
-[ WRITE YOUR REAL FOLDER STRUCTURE HERE ]
-
-Example :
-
-your_project/
+inspection_bot_ws/
 ├── src/
-│   ├── [ your ROS 2 package 1 ]/
-│   ├── [ your ROS 2 package 2 ]/
-│   └── [ your ROS 2 package 3 ]/
-├── dashboard/
-│   ├── app.py
-│   ├── templates/
-│   ├── static/
-│   └── reports/
-├── docker-compose.yml
-├── Dockerfile
-├── requirements.txt
-└── README.md
+│   ├── inspection_bot_bringup/          # ROS 2 launch files
+│   │   └── launch/
+│   │       └── bringup.launch.py        # Launches Gazebo + SLAM + Nav2
+│   │
+│   ├── inspection_bot_description/      # Robot and world description
+│   │   ├── urdf/
+│   │   │   └── rgb_camera.xacro         # RGB camera URDF definition
+│   │   └── worlds/
+│   │       └── server_room.world        # Custom Gazebo server room world
+│   │
+│   ├── inspection_bot_msgs/             # Custom ROS 2 messages
+│   │   └── msg/
+│   │       └── AnomalyEvent.msg         # anomaly_type, rack_id, confidence, critical, image_path
+│   │
+│   ├── inspection_bot_nav/              # Navigation + inspection logic
+│   │   ├── config/
+│   │   │   ├── inspection_points.yaml   # 12 rack positions (x, y, yaw_deg)
+│   │   │   ├── nav2_params.yaml         # Nav2 configuration
+│   │   │   └── slam_toolbox_params.yaml # SLAM Toolbox configuration
+│   │   └── inspection_bot_nav/
+│   │       ├── inspection_commander.py  # Main orchestrator node (TSP + Nav2 + report trigger)
+│   │       └── tsp_planner.py           # TSP: nearest-neighbor + 2-opt optimizer
+│   │
+│   ├── inspection_bot_vision/           # Computer vision layer
+│   │   ├── models/                      # YOLOv8 .pt model files (place here)
+│   │   └── inspection_bot_vision/
+│   │       ├── anomaly_detector.py      # ROS 2 node: subscribes /camera/image_raw, publishes alerts
+│   │       └── detectors.py             # YOLOv8 + OpenCV HSV detection logic
+│   │
+│   └── inspection_bot_dashboard/        # Flask web dashboard
+│       ├── app.py                       # Main Flask app + MQTT listener + Socket.IO
+│       ├── report_generator.py          # PDF report generation (ReportLab)
+│       ├── demo_simulate_inspection.py  # Standalone demo (no ROS 2 needed)
+│       ├── requirements-dashboard.txt   # Dashboard Python dependencies
+│       ├── Dockerfile                   # Dashboard container definition
+│       ├── templates/
+│       │   └── index.html               # Dashboard HTML page
+│       ├── static/
+│       │   ├── style.css                # Dashboard styles
+│       │   └── dashboard.js             # Socket.IO real-time updates
+│       └── reports/                     # Generated PDF reports saved here
+│
+├── docker-compose.yml                   # Mosquitto + Dashboard services
+├── mosquitto.conf                       # MQTT broker config (ports 1883 + 9001)
+└── requirements.txt                     # Full Python dependencies
 ```
 
 ---
@@ -127,87 +173,218 @@ your_project/
 
 ### Prerequisites
 
-- [ LIST YOUR REQUIREMENTS ]
-- Example : Ubuntu 22.04 LTS
-- Example : Docker + Docker Compose
-- Example : Python 3.10+
-- Example : ROS 2 Humble
+- Ubuntu 22.04 LTS
+- ROS 2 Humble — [Installation guide](https://docs.ros.org/en/humble/Installation.html)
+- TurtleBot3 packages
+- Docker + Docker Compose (for dashboard deployment)
+- Python 3.10+
 
-### Installation Steps
+### Step 1 — Clone the repository
 
 ```bash
-# Step 1 — Clone the repository
 git clone https://github.com/achraf25-ctrl/autonomous-server-room-inspection-robot.git
 cd autonomous-server-room-inspection-robot
+```
 
-# Step 2 — [ WRITE YOUR REAL INSTALL COMMAND ]
-# Example : docker-compose up --build
-# OR
-# Example : pip install -r requirements.txt
+### Step 2 — Install ROS 2 dependencies
 
-# Step 3 — [ WRITE YOUR REAL BUILD COMMAND ]
-# Example : colcon build --symlink-install
-# Example : source install/setup.bash
+```bash
+sudo apt update
+sudo apt install -y \
+  ros-humble-turtlebot3 \
+  ros-humble-turtlebot3-gazebo \
+  ros-humble-navigation2 \
+  ros-humble-nav2-bringup \
+  ros-humble-slam-toolbox \
+  ros-humble-cv-bridge \
+  python3-colcon-common-extensions
+
+pip install -r requirements.txt
+```
+
+### Step 3 — Build the ROS 2 workspace
+
+```bash
+cd inspection_bot_ws
+colcon build --symlink-install
+source install/setup.bash
+```
+
+### Step 4 — (Optional) Install YOLOv8
+
+```bash
+pip install ultralytics==8.2.0
+# Place your trained .pt model in:
+# src/inspection_bot_vision/models/
 ```
 
 ---
 
-## 🚀 Usage
+## 🚀 Running the Project
 
-### Step 1 — [ YOUR FIRST STEP ]
+### Full System (ROS 2 + Dashboard)
+
+Open **5 separate terminals**. In each terminal, first run:
+
 ```bash
-[ YOUR REAL COMMAND HERE ]
+source /opt/ros/humble/setup.bash
+source inspection_bot_ws/install/setup.bash
+export TURTLEBOT3_MODEL=waffle_pi
 ```
 
-### Step 2 — [ YOUR SECOND STEP ]
+#### Terminal 1 — Start MQTT Broker + Dashboard (Docker)
+
 ```bash
-[ YOUR REAL COMMAND HERE ]
+docker-compose up
 ```
 
-### Step 3 — [ YOUR THIRD STEP ]
+Dashboard available at: **http://localhost:5000**
+
+#### Terminal 2 — Launch Gazebo + SLAM + Nav2
+
 ```bash
-[ YOUR REAL COMMAND HERE ]
+ros2 launch inspection_bot_bringup bringup.launch.py
 ```
 
-### Step 4 — Open the Dashboard
+This single command launches:
+- Gazebo with `server_room.world`
+- TurtleBot3 waffle_pi (with RGB camera)
+- SLAM Toolbox (online async mode)
+- Nav2 navigation stack
+
+#### Terminal 3 — Launch Anomaly Detector (Vision Node)
+
+```bash
+ros2 run inspection_bot_vision anomaly_detector
 ```
-http://127.0.0.1:5000
+
+Subscribes to `/camera/image_raw`, runs YOLOv8 or OpenCV detection, publishes to `/anomaly_event` and MQTT.
+
+#### Terminal 4 — Launch Inspection Commander
+
+```bash
+ros2 run inspection_bot_nav inspection_commander
+```
+
+Loads inspection points, computes TSP route, navigates to each rack, triggers PDF report at end.
+
+#### Terminal 5 — (Optional) Manual Teleoperation
+
+```bash
+ros2 run turtlebot3_teleop teleop_keyboard
+```
+
+---
+
+### Demo Mode (No ROS 2 Required)
+
+To test the dashboard and report generation without ROS 2:
+
+```bash
+# Terminal 1 — Start dashboard only
+docker-compose up
+# OR without Docker:
+cd src/inspection_bot_dashboard
+pip install -r requirements-dashboard.txt
+python3 app.py
+
+# Terminal 2 — Run the simulation script
+cd src/inspection_bot_dashboard
+python3 demo_simulate_inspection.py
 ```
 
 ---
 
 ## 📊 Dashboard
 
-[ DESCRIBE WHAT YOUR DASHBOARD SHOWS ]
+Open **http://localhost:5000** after starting the system.
 
-Example :
-- **Server Room Plan** — Color-coded rack grid (Green=OK / Orange=Warning / Red=Critical)
-- **Real-Time Alert Feed** — Live anomaly notifications with timestamps
-- **Health Score** — Global server room health percentage (0-100%)
-- **PDF Report** — One-click inspection report generation
+| Feature | Description |
+|---|---|
+| **Rack Grid** | 3×4 color-coded rack map — Green (OK) / Orange (Warning) / Red (Critical) |
+| **Real-Time Alert Feed** | Live anomaly stream with rack ID, type, confidence, and timestamp |
+| **Health Score** | Global score: 100% - (5 × warnings) - (15 × criticals) |
+| **Generate Report** | Manual PDF generation button |
+| **Reset Demo** | Resets all racks to OK and clears history |
+
+### Flask API Endpoints
+
+| Endpoint | Method | Description |
+|---|---|---|
+| `/` | GET | Dashboard HTML page |
+| `/api/racks` | GET | Current status of all 12 racks |
+| `/api/alerts` | GET | Last 50 alerts |
+| `/api/health_score` | GET | Current health score |
+| `/api/generate_report` | POST | Generate PDF report |
+| `/api/simulate_alert` | POST | Inject a test alert (demo mode) |
+| `/api/reset_demo` | POST | Reset all racks to OK |
+| `/reports/<filename>` | GET | Download a generated PDF report |
 
 ---
 
-## 🔍 Anomaly Detection
+## 🔍 Anomaly Detection Pipeline
 
-[ DESCRIBE WHAT YOUR YOLO DETECTS ]
+```
+/camera/image_raw (ROS 2 Image message)
+             │
+             ▼
+      cv_bridge → OpenCV frame (BGR)
+             │
+             ├─► YOLOv8 (if model in models/ folder)
+             │     └─► Detects: red_led, open_rack_door,
+             │                  disconnected_cable, smoke
+             │
+             └─► OpenCV HSV Fallback (always available)
+                   ├─► Red LED detection (HSV thresholding)
+                   └─► Open rack door (dark rectangle heuristic)
+             │
+             ▼
+    Detection(anomaly_type, confidence, bbox, critical)
+             │
+             ├─► Save snapshot image (~/inspection_bot_snapshots/)
+             ├─► Publish /anomaly_event (AnomalyEvent.msg) → ROS 2
+             └─► Publish MQTT "inspection/alerts" → Dashboard
+```
 
-Example detected classes :
-- `red_led` — Hardware failure indicator
-- `disconnected_cable` — Connectivity issue
-- `open_rack` — Physical security breach
-- `smoke` — CRITICAL fire hazard
+### Detected Anomaly Types
+
+| Type | Critical | Detection Method |
+|---|---|---|
+| `red_led` | No | HSV thresholding (red hue 0°–8° and 172°–180°) |
+| `open_rack_door` | No | Large dark rectangle detection |
+| `disconnected_cable` | No | YOLOv8 |
+| `smoke` | **Yes** | YOLOv8 |
 
 ---
 
-## 📄 Inspection Reports
+## 📐 TSP Route Planning
 
-[ DESCRIBE YOUR PDF REPORTS ]
+The inspection route is computed by `tsp_planner.py` using a classic Operations Research approach:
 
-Example :
-- Generated automatically after each patrol
-- Contains : timestamp, health score, anomaly log, rack status
-- Saved as : `inspection_report_YYYYMMDD_HHMMSS.pdf`
+1. **Nearest-neighbor heuristic** — greedy initial solution starting from robot start pose
+2. **2-opt local search** — iterative improvement until no swap reduces total distance
+
+12 inspection points (racks) are defined in `inspection_points.yaml`:
+
+- **Row 1** (y = 1.8 m): rack_1_1 → rack_1_4
+- **Row 2** (y = −0.7 m): rack_2_1 → rack_2_4
+- **Row 3** (y = −3.2 m): rack_3_1 → rack_3_4
+
+Robot start pose: (x=0.0, y=−3.8, yaw=90°)
+
+---
+
+## 📄 Automated PDF Reports
+
+Reports are generated automatically by `inspection_commander.py` at the end of each patrol, or manually via the dashboard button.
+
+Each report includes:
+- Inspection timestamp and duration
+- Global health score
+- Complete anomaly log with confidence scores and timestamps
+- Rack-by-rack status summary
+
+Reports saved as: `reports/inspection_report_YYYYMMDD_HHMMSS.pdf`
 
 ---
 
@@ -215,42 +392,50 @@ Example :
 
 | Metric | Value |
 |---|---|
-| [ METRIC 1 ] | [ YOUR REAL VALUE ] |
-| [ METRIC 2 ] | [ YOUR REAL VALUE ] |
-| [ METRIC 3 ] | [ YOUR REAL VALUE ] |
-| [ METRIC 4 ] | [ YOUR REAL VALUE ] |
-
-Example metrics :
-- Navigation success rate : XX%
-- Anomaly detection confidence : >XX%
-- Report generation time : X seconds
-- Full patrol cycle duration : X minutes
+| Inspection points | 12 racks (3 rows × 4 columns) |
+| Route optimization | TSP nearest-neighbor + 2-opt |
+| MQTT alert latency | < 100 ms |
+| PDF generation time | < 2 seconds |
+| Dashboard update | Real-time (Socket.IO) |
+| Dwell time per rack | 4 seconds |
+| Detection cooldown | 15 seconds per rack (anti-spam) |
 
 ---
 
 ## 🔮 Future Improvements
 
-- [ ] [ IMPROVEMENT 1 — e.g. Real hardware deployment ]
-- [ ] [ IMPROVEMENT 2 — e.g. Multi-robot coordination ]
-- [ ] [ IMPROVEMENT 3 — e.g. Custom YOLOv8 training ]
-- [ ] [ IMPROVEMENT 4 — e.g. Email/SMS alert integration ]
-- [ ] [ IMPROVEMENT 5 — e.g. 3D mapping with RTAB-Map ]
+- [ ] Train a custom YOLOv8 model on real server room dataset (MVTec AD + synthetic images)
+- [ ] Deploy on physical TurtleBot3 hardware (Sim-to-Real transfer)
+- [ ] Multi-robot coordination for parallel zone inspection
+- [ ] 3D mapping with RTAB-Map
+- [ ] Email / SMS alert integration
+- [ ] Historical trend analysis and anomaly frequency dashboard
+- [ ] Integration with DCIM (Data Center Infrastructure Management) systems
+- [ ] ROS 2 Action Server for inspection missions
 
 ---
 
 ## 📜 License
 
-This project is licensed under the **MIT License**.
+This project is licensed under the **MIT License** — see the [LICENSE](LICENSE) file for details.
 
 ---
 
 ## 👤 Author
 
-**[ YOUR FULL NAME ]**
-Robotics & Connected Objects Engineering Student
-ENIAD — École Nationale de l'Intelligence Artificielle et du Digital, Berkane, Morocco
+**Achraf Ismaili Alaoui**  
+Robotics & Connected Objects Engineering Student  
+ENIAD — École Nationale de l'Intelligence Artificielle et du Digital, Berkane, Morocco  
 Internship: Ministry of Economy and Finance of Morocco — IT Infrastructure Division
 
-🔗 [GitHub](https://github.com/achraf25-ctrl) | 
-🔗 [LinkedIn](https://linkedin.com/in/[ YOUR LINKEDIN ])
+🔗 [LinkedIn](https://www.linkedin.com/in/achraf-ismaili-alaoui-355b62368/) | 🐙 [GitHub](https://github.com/achraf25-ctrl)
 
+---
+
+## 🙏 Acknowledgments
+
+- Ministry of Economy and Finance of Morocco — IT Infrastructure Division
+- ENIAD — Robotics & Connected Objects Engineering Program
+- ROS 2 Community, Nav2 Contributors, SLAM Toolbox Team
+- Ultralytics YOLOv8 Team
+- TurtleBot3 Open Source Community (ROBOTIS)
