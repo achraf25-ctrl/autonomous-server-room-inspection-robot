@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/media/sf_inspection_bot_ws/build/inspection_bot_msgs/rosidl_generator_py/inspection_bot_msgs/libinspection_bot_msgs__python.so" "TARGETS" "inspection_bot_msgs__python" "ARCHIVE_DESTINATION" "lib" "LIBRARY_DESTINATION" "lib" "RUNTIME_DESTINATION" "bin")

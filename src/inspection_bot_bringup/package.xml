@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>inspection_bot_bringup</name>
+  <version>0.1.0</version>
+  <description>Lance la simulation Gazebo, SLAM Toolbox et Nav2 pour le robot inspecteur</description>
+  <maintainer email="ashraf@example.com">Ashraf</maintainer>
+  <license>MIT</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <exec_depend>gazebo_ros</exec_depend>
+  <exec_depend>turtlebot3_gazebo</exec_depend>
+  <exec_depend>slam_toolbox</exec_depend>
+  <exec_depend>nav2_bringup</exec_depend>
+  <exec_depend>inspection_bot_description</exec_depend>
+  <exec_depend>inspection_bot_nav</exec_depend>
+  <exec_depend>inspection_bot_vision</exec_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>

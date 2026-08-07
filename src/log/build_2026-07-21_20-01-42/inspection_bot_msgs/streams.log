@@ -1,0 +1,213 @@
+[0.166s] Invoking command in '/media/sf_inspection_bot_ws/src/build/inspection_bot_msgs': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /media/sf_inspection_bot_ws/src/inspection_bot_msgs -DCMAKE_INSTALL_PREFIX=/media/sf_inspection_bot_ws/src/install/inspection_bot_msgs
+[1.682s] -- The C compiler identification is GNU 9.4.0
+[3.960s] -- The CXX compiler identification is GNU 9.4.0
+[4.010s] -- Check for working C compiler: /usr/bin/cc
+[4.891s] -- Check for working C compiler: /usr/bin/cc -- works
+[4.902s] -- Detecting C compiler ABI info
+[5.391s] -- Detecting C compiler ABI info - done
+[5.439s] -- Detecting C compile features
+[5.442s] -- Detecting C compile features - done
+[5.467s] -- Check for working CXX compiler: /usr/bin/c++
+[5.967s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[5.977s] -- Detecting CXX compiler ABI info
+[6.504s] -- Detecting CXX compiler ABI info - done
+[6.533s] -- Detecting CXX compile features
+[6.535s] -- Detecting CXX compile features - done
+[6.583s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[6.622s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[6.624s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[7.161s] -- Found rosidl_default_generators: 1.0.1 (/opt/ros/foxy/share/rosidl_default_generators/cmake)
+[7.182s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[7.207s] -- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[7.512s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[7.557s] -- Found FastRTPS: /opt/ros/foxy/include  
+[7.681s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[7.737s] -- Found std_msgs: 2.0.5 (/opt/ros/foxy/share/std_msgs/cmake)
+[7.801s] -- Found geometry_msgs: 2.0.5 (/opt/ros/foxy/share/geometry_msgs/cmake)
+[7.925s] -- Found PythonInterp: /usr/bin/python3 (found version "3.8.10") 
+[9.173s] -- Found ament_cmake_ros: 0.9.2 (/opt/ros/foxy/share/ament_cmake_ros/cmake)
+[12.458s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[14.640s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[14.726s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3.5") 
+[14.734s] -- Found python_cmake_module: 0.8.1 (/opt/ros/foxy/share/python_cmake_module/cmake)
+[14.812s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.8.so (found suitable version "3.8.10", minimum required is "3.5") 
+[14.815s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[14.818s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.8
+[14.821s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.8.so
+[14.863s] -- Found PythonExtra: .so  
+[16.196s] -- Configuring done
+[18.410s] -- Generating done
+[18.784s] -- Build files have been written to: /media/sf_inspection_bot_ws/src/build/inspection_bot_msgs
+[18.802s] Invoked command in '/media/sf_inspection_bot_ws/src/build/inspection_bot_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /media/sf_inspection_bot_ws/src/inspection_bot_msgs -DCMAKE_INSTALL_PREFIX=/media/sf_inspection_bot_ws/src/install/inspection_bot_msgs
+[18.816s] Invoking command in '/media/sf_inspection_bot_ws/src/build/inspection_bot_msgs': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /media/sf_inspection_bot_ws/src/build/inspection_bot_msgs -- -j3 -l3
+[18.999s] [35m[1mScanning dependencies of target inspection_bot_msgs__cpp[0m
+[19.007s] [  3%] [34m[1mGenerating C code for ROS interfaces[0m
+[19.091s] [  6%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[19.597s] [35m[1mScanning dependencies of target inspection_bot_msgs__rosidl_generator_c[0m
+[19.732s] [  6%] Built target inspection_bot_msgs__cpp
+[19.820s] [  9%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[19.828s] [ 12%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[19.923s] [ 16%] [32mBuilding C object CMakeFiles/inspection_bot_msgs__rosidl_generator_c.dir/rosidl_generator_c/inspection_bot_msgs/msg/detail/anomaly_event__functions.c.o[0m
+[20.484s] [35m[1mScanning dependencies of target inspection_bot_msgs__rosidl_typesupport_introspection_cpp[0m
+[20.537s] [35m[1mScanning dependencies of target inspection_bot_msgs__rosidl_typesupport_cpp[0m
+[20.731s] [ 19%] [32m[1mLinking C shared library libinspection_bot_msgs__rosidl_generator_c.so[0m
+[20.808s] [ 22%] [32mBuilding CXX object CMakeFiles/inspection_bot_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/inspection_bot_msgs/msg/detail/anomaly_event__type_support.cpp.o[0m
+[20.955s] [ 25%] [32mBuilding CXX object CMakeFiles/inspection_bot_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/inspection_bot_msgs/msg/anomaly_event__type_support.cpp.o[0m
+[21.214s] [ 25%] Built target inspection_bot_msgs__rosidl_generator_c
+[21.314s] [ 29%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[21.949s] [35m[1mScanning dependencies of target inspection_bot_msgs__rosidl_typesupport_fastrtps_cpp[0m
+[22.383s] [ 32%] [32mBuilding CXX object CMakeFiles/inspection_bot_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/inspection_bot_msgs/msg/detail/dds_fastrtps/anomaly_event__type_support.cpp.o[0m
+[22.968s] [ 35%] [32m[1mLinking CXX shared library libinspection_bot_msgs__rosidl_typesupport_cpp.so[0m
+[23.062s] [ 38%] [32m[1mLinking CXX shared library libinspection_bot_msgs__rosidl_typesupport_introspection_cpp.so[0m
+[23.273s] [ 38%] Built target inspection_bot_msgs__rosidl_typesupport_cpp
+[23.410s] [ 41%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[23.495s] [ 41%] Built target inspection_bot_msgs__rosidl_typesupport_introspection_cpp
+[23.687s] [ 45%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[23.970s] [ 48%] [32m[1mLinking CXX shared library libinspection_bot_msgs__rosidl_typesupport_fastrtps_cpp.so[0m
+[24.094s] [35m[1mScanning dependencies of target inspection_bot_msgs__rosidl_typesupport_introspection_c[0m
+[24.271s] [35m[1mScanning dependencies of target inspection_bot_msgs__rosidl_typesupport_c[0m
+[24.523s] [ 51%] [32mBuilding CXX object CMakeFiles/inspection_bot_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/inspection_bot_msgs/msg/anomaly_event__type_support.cpp.o[0m
+[24.554s] [ 54%] [32mBuilding C object CMakeFiles/inspection_bot_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/inspection_bot_msgs/msg/detail/anomaly_event__type_support.c.o[0m
+[24.558s] [ 54%] Built target inspection_bot_msgs__rosidl_typesupport_fastrtps_cpp
+[24.639s] [ 58%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[24.750s] [ 61%] [32m[1mLinking CXX shared library libinspection_bot_msgs__rosidl_typesupport_c.so[0m
+[24.797s] [ 64%] [32m[1mLinking C shared library libinspection_bot_msgs__rosidl_typesupport_introspection_c.so[0m
+[25.045s] [ 64%] Built target inspection_bot_msgs__rosidl_typesupport_c
+[25.122s] [ 64%] Built target inspection_bot_msgs__rosidl_typesupport_introspection_c
+[25.285s] [35m[1mScanning dependencies of target inspection_bot_msgs__rosidl_typesupport_fastrtps_c[0m
+[25.582s] [ 67%] [32mBuilding CXX object CMakeFiles/inspection_bot_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/inspection_bot_msgs/msg/detail/anomaly_event__type_support_c.cpp.o[0m
+[26.331s] [ 70%] [32m[1mLinking CXX shared library libinspection_bot_msgs__rosidl_typesupport_fastrtps_c.so[0m
+[26.596s] [ 70%] Built target inspection_bot_msgs__rosidl_typesupport_fastrtps_c
+[26.627s] [35m[1mScanning dependencies of target inspection_bot_msgs[0m
+[26.681s] [ 70%] Built target inspection_bot_msgs
+[26.717s] [35m[1mScanning dependencies of target inspection_bot_msgs__py[0m
+[26.767s] [ 74%] [34m[1mGenerating Python code for ROS interfaces[0m
+[27.835s] [ 74%] Built target inspection_bot_msgs__py
+[27.905s] [35m[1mScanning dependencies of target inspection_bot_msgs__python[0m
+[28.613s] [ 77%] [32mBuilding C object CMakeFiles/inspection_bot_msgs__python.dir/rosidl_generator_py/inspection_bot_msgs/msg/_anomaly_event_s.c.o[0m
+[29.007s] [ 80%] [32m[1mLinking C shared library rosidl_generator_py/inspection_bot_msgs/libinspection_bot_msgs__python.so[0m
+[29.166s] [ 80%] Built target inspection_bot_msgs__python
+[29.218s] [35m[1mScanning dependencies of target inspection_bot_msgs__rosidl_typesupport_c__pyext[0m
+[29.225s] [35m[1mScanning dependencies of target inspection_bot_msgs__rosidl_typesupport_fastrtps_c__pyext[0m
+[29.227s] [35m[1mScanning dependencies of target inspection_bot_msgs__rosidl_typesupport_introspection_c__pyext[0m
+[29.856s] [ 83%] [32mBuilding C object CMakeFiles/inspection_bot_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/inspection_bot_msgs/_inspection_bot_msgs_s.ep.rosidl_typesupport_c.c.o[0m
+[29.866s] [ 87%] [32mBuilding C object CMakeFiles/inspection_bot_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/inspection_bot_msgs/_inspection_bot_msgs_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[30.204s] [ 90%] [32mBuilding C object CMakeFiles/inspection_bot_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/inspection_bot_msgs/_inspection_bot_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[30.303s] [ 93%] [32m[1mLinking C shared library rosidl_generator_py/inspection_bot_msgs/inspection_bot_msgs_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so[0m
+[30.392s] [ 96%] [32m[1mLinking C shared library rosidl_generator_py/inspection_bot_msgs/inspection_bot_msgs_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so[0m
+[30.596s] [ 96%] Built target inspection_bot_msgs__rosidl_typesupport_c__pyext
+[30.681s] [ 96%] Built target inspection_bot_msgs__rosidl_typesupport_introspection_c__pyext
+[30.904s] [100%] [32m[1mLinking CXX shared library rosidl_generator_py/inspection_bot_msgs/inspection_bot_msgs_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so[0m
+[31.154s] [100%] Built target inspection_bot_msgs__rosidl_typesupport_fastrtps_c__pyext
+[31.229s] Invoked command in '/media/sf_inspection_bot_ws/src/build/inspection_bot_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /media/sf_inspection_bot_ws/src/build/inspection_bot_msgs -- -j3 -l3
+[31.277s] Invoking command in '/media/sf_inspection_bot_ws/src/build/inspection_bot_msgs': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /media/sf_inspection_bot_ws/src/build/inspection_bot_msgs
+[31.325s] -- Install configuration: ""
+[31.354s] -- Installing: /media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/share/ament_index/resource_index/rosidl_interfaces/inspection_bot_msgs
+[31.384s] -- Installing: /media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/include/inspection_bot_msgs
+[31.395s] -- Installing: /media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/include/inspection_bot_msgs/msg
+[31.405s] -- Installing: /media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/include/inspection_bot_msgs/msg/anomaly_event.h
+[31.427s] -- Installing: /media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/include/inspection_bot_msgs/msg/detail
+[31.438s] -- Installing: /media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/include/inspection_bot_msgs/msg/detail/anomaly_event__functions.c
+[31.455s] -- Installing: /media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/include/inspection_bot_msgs/msg/detail/anomaly_event__functions.h
+[31.467s] -- Installing: /media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/include/inspection_bot_msgs/msg/detail/anomaly_event__struct.h
+[31.488s] -- Installing: /media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/include/inspection_bot_msgs/msg/detail/anomaly_event__type_support.h
+[31.506s] -- Installing: /media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/include/inspection_bot_msgs/msg/rosidl_generator_c__visibility_control.h
+[31.522s] -- Installing: /media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/share/inspection_bot_msgs/environment/library_path.sh
+[31.544s] -- Installing: /media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/share/inspection_bot_msgs/environment/library_path.dsv
+[31.566s] -- Installing: /media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/lib/libinspection_bot_msgs__rosidl_generator_c.so
+[31.626s] -- Set runtime path of "/media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/lib/libinspection_bot_msgs__rosidl_generator_c.so" to ""
+[31.628s] -- Up-to-date: /media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/include/inspection_bot_msgs
+[31.634s] -- Up-to-date: /media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/include/inspection_bot_msgs/msg
+[31.641s] -- Up-to-date: /media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/include/inspection_bot_msgs/msg/detail
+[31.650s] -- Installing: /media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/include/inspection_bot_msgs/msg/detail/anomaly_event__rosidl_typesupport_fastrtps_c.h
+[31.675s] -- Installing: /media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/include/inspection_bot_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[31.691s] -- Installing: /media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/lib/libinspection_bot_msgs__rosidl_typesupport_fastrtps_c.so
+[31.745s] -- Set runtime path of "/media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/lib/libinspection_bot_msgs__rosidl_typesupport_fastrtps_c.so" to ""
+[31.749s] -- Up-to-date: /media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/include/inspection_bot_msgs
+[31.753s] -- Up-to-date: /media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/include/inspection_bot_msgs/msg
+[31.758s] -- Up-to-date: /media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/include/inspection_bot_msgs/msg/detail
+[31.768s] -- Installing: /media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/include/inspection_bot_msgs/msg/detail/anomaly_event__rosidl_typesupport_fastrtps_cpp.hpp
+[31.785s] -- Installing: /media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/include/inspection_bot_msgs/msg/detail/dds_fastrtps
+[31.792s] -- Installing: /media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/include/inspection_bot_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[31.807s] -- Installing: /media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/lib/libinspection_bot_msgs__rosidl_typesupport_fastrtps_cpp.so
+[31.884s] -- Set runtime path of "/media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/lib/libinspection_bot_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""
+[31.887s] -- Up-to-date: /media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/include/inspection_bot_msgs
+[31.889s] -- Up-to-date: /media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/include/inspection_bot_msgs/msg
+[31.893s] -- Up-to-date: /media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/include/inspection_bot_msgs/msg/detail
+[31.898s] -- Installing: /media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/include/inspection_bot_msgs/msg/detail/anomaly_event__rosidl_typesupport_introspection_c.h
+[31.913s] -- Installing: /media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/include/inspection_bot_msgs/msg/detail/anomaly_event__type_support.c
+[31.931s] -- Installing: /media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/include/inspection_bot_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[31.946s] -- Installing: /media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/lib/libinspection_bot_msgs__rosidl_typesupport_introspection_c.so
+[32.007s] -- Set runtime path of "/media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/lib/libinspection_bot_msgs__rosidl_typesupport_introspection_c.so" to ""
+[32.011s] -- Installing: /media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/lib/libinspection_bot_msgs__rosidl_typesupport_c.so
+[32.066s] -- Set runtime path of "/media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/lib/libinspection_bot_msgs__rosidl_typesupport_c.so" to ""
+[32.068s] -- Up-to-date: /media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/include/inspection_bot_msgs
+[32.073s] -- Up-to-date: /media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/include/inspection_bot_msgs/msg
+[32.081s] -- Installing: /media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/include/inspection_bot_msgs/msg/anomaly_event.hpp
+[32.100s] -- Up-to-date: /media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/include/inspection_bot_msgs/msg/detail
+[32.106s] -- Installing: /media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/include/inspection_bot_msgs/msg/detail/anomaly_event__builder.hpp
+[32.128s] -- Installing: /media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/include/inspection_bot_msgs/msg/detail/anomaly_event__struct.hpp
+[32.149s] -- Installing: /media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/include/inspection_bot_msgs/msg/detail/anomaly_event__traits.hpp
+[32.172s] -- Installing: /media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/include/inspection_bot_msgs/msg/detail/anomaly_event__type_support.hpp
+[32.189s] -- Installing: /media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/include/inspection_bot_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
+[32.207s] -- Up-to-date: /media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/include/inspection_bot_msgs
+[32.213s] -- Up-to-date: /media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/include/inspection_bot_msgs/msg
+[32.218s] -- Up-to-date: /media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/include/inspection_bot_msgs/msg/detail
+[32.223s] -- Installing: /media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/include/inspection_bot_msgs/msg/detail/anomaly_event__rosidl_typesupport_introspection_cpp.hpp
+[32.245s] -- Installing: /media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/include/inspection_bot_msgs/msg/detail/anomaly_event__type_support.cpp
+[32.269s] -- Installing: /media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/lib/libinspection_bot_msgs__rosidl_typesupport_introspection_cpp.so
+[32.348s] -- Set runtime path of "/media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/lib/libinspection_bot_msgs__rosidl_typesupport_introspection_cpp.so" to ""
+[32.357s] -- Installing: /media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/lib/libinspection_bot_msgs__rosidl_typesupport_cpp.so
+[32.427s] -- Set runtime path of "/media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/lib/libinspection_bot_msgs__rosidl_typesupport_cpp.so" to ""
+[32.431s] -- Installing: /media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/share/inspection_bot_msgs/environment/pythonpath.sh
+[32.452s] -- Installing: /media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/share/inspection_bot_msgs/environment/pythonpath.dsv
+[32.478s] -- Installing: /media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/lib/python3.8/site-packages/inspection_bot_msgs/__init__.py
+[32.561s] Compiling '/media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/lib/python3.8/site-packages/inspection_bot_msgs/__init__.py'...
+[32.574s] -- Installing: /media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/lib/python3.8/site-packages/inspection_bot_msgs/msg
+[32.578s] -- Installing: /media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/lib/python3.8/site-packages/inspection_bot_msgs/msg/_anomaly_event.py
+[32.592s] -- Installing: /media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/lib/python3.8/site-packages/inspection_bot_msgs/msg/_anomaly_event_s.c
+[32.614s] -- Installing: /media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/lib/python3.8/site-packages/inspection_bot_msgs/msg/__init__.py
+[32.638s] -- Installing: /media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/lib/python3.8/site-packages/inspection_bot_msgs/inspection_bot_msgs_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so
+[32.681s] -- Set runtime path of "/media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/lib/python3.8/site-packages/inspection_bot_msgs/inspection_bot_msgs_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so" to ""
+[32.685s] -- Installing: /media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/lib/python3.8/site-packages/inspection_bot_msgs/inspection_bot_msgs_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so
+[32.752s] -- Set runtime path of "/media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/lib/python3.8/site-packages/inspection_bot_msgs/inspection_bot_msgs_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so" to ""
+[32.755s] -- Installing: /media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/lib/python3.8/site-packages/inspection_bot_msgs/inspection_bot_msgs_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so
+[32.817s] -- Set runtime path of "/media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/lib/python3.8/site-packages/inspection_bot_msgs/inspection_bot_msgs_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so" to ""
+[32.824s] -- Installing: /media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/lib/libinspection_bot_msgs__python.so
+[32.901s] -- Set runtime path of "/media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/lib/libinspection_bot_msgs__python.so" to ""
+[32.908s] -- Installing: /media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/share/inspection_bot_msgs/msg/AnomalyEvent.idl
+[32.928s] -- Installing: /media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/share/inspection_bot_msgs/msg/AnomalyEvent.msg
+[32.955s] -- Installing: /media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/share/ament_index/resource_index/package_run_dependencies/inspection_bot_msgs
+[32.978s] -- Installing: /media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/share/ament_index/resource_index/parent_prefix_path/inspection_bot_msgs
+[32.999s] -- Installing: /media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/share/inspection_bot_msgs/environment/ament_prefix_path.sh
+[33.015s] -- Installing: /media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/share/inspection_bot_msgs/environment/ament_prefix_path.dsv
+[33.032s] -- Installing: /media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/share/inspection_bot_msgs/environment/path.sh
+[33.057s] -- Installing: /media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/share/inspection_bot_msgs/environment/path.dsv
+[33.076s] -- Installing: /media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/share/inspection_bot_msgs/local_setup.bash
+[33.099s] -- Installing: /media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/share/inspection_bot_msgs/local_setup.sh
+[33.124s] -- Installing: /media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/share/inspection_bot_msgs/local_setup.zsh
+[33.146s] -- Installing: /media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/share/inspection_bot_msgs/local_setup.dsv
+[33.168s] -- Installing: /media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/share/inspection_bot_msgs/package.dsv
+[33.199s] -- Installing: /media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/share/ament_index/resource_index/packages/inspection_bot_msgs
+[33.220s] -- Installing: /media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/share/inspection_bot_msgs/cmake/inspection_bot_msgs__rosidl_generator_cExport.cmake
+[33.243s] -- Installing: /media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/share/inspection_bot_msgs/cmake/inspection_bot_msgs__rosidl_generator_cExport-noconfig.cmake
+[33.258s] -- Installing: /media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/share/inspection_bot_msgs/cmake/inspection_bot_msgs__rosidl_typesupport_introspection_cExport.cmake
+[33.281s] -- Installing: /media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/share/inspection_bot_msgs/cmake/inspection_bot_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[33.307s] -- Installing: /media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/share/inspection_bot_msgs/cmake/inspection_bot_msgs__rosidl_typesupport_cExport.cmake
+[33.326s] -- Installing: /media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/share/inspection_bot_msgs/cmake/inspection_bot_msgs__rosidl_typesupport_cExport-noconfig.cmake
+[33.343s] -- Installing: /media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/share/inspection_bot_msgs/cmake/inspection_bot_msgs__rosidl_generator_cppExport.cmake
+[33.358s] -- Installing: /media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/share/inspection_bot_msgs/cmake/inspection_bot_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[33.375s] -- Installing: /media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/share/inspection_bot_msgs/cmake/inspection_bot_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[33.394s] -- Installing: /media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/share/inspection_bot_msgs/cmake/inspection_bot_msgs__rosidl_typesupport_cppExport.cmake
+[33.416s] -- Installing: /media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/share/inspection_bot_msgs/cmake/inspection_bot_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+[33.433s] -- Installing: /media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/share/inspection_bot_msgs/cmake/rosidl_cmake-extras.cmake
+[33.451s] -- Installing: /media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/share/inspection_bot_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[33.472s] -- Installing: /media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/share/inspection_bot_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[33.492s] -- Installing: /media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/share/inspection_bot_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[33.505s] -- Installing: /media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/share/inspection_bot_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[33.520s] -- Installing: /media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/share/inspection_bot_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[33.545s] -- Installing: /media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/share/inspection_bot_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[33.564s] -- Installing: /media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/share/inspection_bot_msgs/cmake/inspection_bot_msgsConfig.cmake
+[33.579s] -- Installing: /media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/share/inspection_bot_msgs/cmake/inspection_bot_msgsConfig-version.cmake
+[33.601s] -- Installing: /media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/share/inspection_bot_msgs/package.xml
+[33.658s] Invoked command in '/media/sf_inspection_bot_ws/src/build/inspection_bot_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /media/sf_inspection_bot_ws/src/build/inspection_bot_msgs

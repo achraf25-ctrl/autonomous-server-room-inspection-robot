@@ -1,0 +1,4 @@
+source;share/inspection_bot_description/local_setup.bash
+source;share/inspection_bot_description/local_setup.dsv
+source;share/inspection_bot_description/local_setup.sh
+source;share/inspection_bot_description/local_setup.zsh

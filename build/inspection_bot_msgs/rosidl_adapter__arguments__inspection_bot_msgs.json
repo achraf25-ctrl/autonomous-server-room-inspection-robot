@@ -1,0 +1,6 @@
+{
+  "package_name": "inspection_bot_msgs",
+  "non_idl_tuples": [
+    "/media/sf_inspection_bot_ws/src/inspection_bot_msgs:msg/AnomalyEvent.msg"
+  ]
+}

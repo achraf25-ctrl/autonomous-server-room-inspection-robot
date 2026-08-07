@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Robot Inspecteur — Dashboard</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.7.5/socket.io.min.js"></script>
+</head>
+<body>
+  <header>
+    <h1>🤖 Technicien Virtuel — Salle Serveur</h1>
+    <div id="health-score-badge" class="badge">Score : <span id="health-score-value">--</span>%</div>
+  </header>
+
+  <main>
+    <section class="panel">
+      <h2>Plan de la salle</h2>
+      <div id="room-grid" class="room-grid"></div>
+      <div class="legend">
+        <span class="legend-item"><span class="dot ok"></span> OK</span>
+        <span class="legend-item"><span class="dot warning"></span> Avertissement</span>
+        <span class="legend-item"><span class="dot critical"></span> Critique</span>
+      </div>
+      <div class="actions">
+        <button id="btn-generate-report">📄 Générer le rapport PDF</button>
+        <button id="btn-reset-demo" class="secondary">↺ Réinitialiser (démo)</button>
+      </div>
+      <div id="report-link"></div>
+    </section>
+
+    <section class="panel">
+      <h2>Flux d'alertes en temps réel</h2>
+      <ul id="alert-feed" class="alert-feed"></ul>
+    </section>
+  </main>
+
+  <script src="{{ url_for('static', filename='dashboard.js') }}"></script>
+</body>
+</html>

@@ -1,0 +1,536 @@
+[0.000000] (-) TimerEvent: {}
+[0.002049] (-) JobUnselected: {'identifier': 'inspection_bot_bringup'}
+[0.011388] (-) JobUnselected: {'identifier': 'inspection_bot_description'}
+[0.014690] (-) JobUnselected: {'identifier': 'inspection_bot_nav'}
+[0.015776] (-) JobUnselected: {'identifier': 'inspection_bot_vision'}
+[0.017096] (inspection_bot_msgs) JobQueued: {'identifier': 'inspection_bot_msgs', 'dependencies': OrderedDict()}
+[0.018333] (inspection_bot_msgs) JobStarted: {'identifier': 'inspection_bot_msgs'}
+[0.086972] (inspection_bot_msgs) JobProgress: {'identifier': 'inspection_bot_msgs', 'progress': 'cmake'}
+[0.097846] (-) TimerEvent: {}
+[0.125355] (inspection_bot_msgs) Command: {'cmd': ['/usr/bin/cmake', '/media/sf_inspection_bot_ws/src/inspection_bot_msgs', '-DCMAKE_INSTALL_PREFIX=/media/sf_inspection_bot_ws/src/install/inspection_bot_msgs'], 'cwd': '/media/sf_inspection_bot_ws/src/build/inspection_bot_msgs', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('PYTHONWARNINGS', 'ignore:::setuptools.command.install'), ('USER', 'achraf'), ('FONTCONFIG_PATH', '/etc/fonts'), ('GIO_MODULE_DIR', '/home/achraf/snap/code/common/.cache/gio-modules'), ('SSH_AGENT_PID', '1491'), ('XDG_SESSION_TYPE', 'x11'), ('GTK_EXE_PREFIX_VSCODE_SNAP_ORIG', ''), ('GDK_BACKEND_VSCODE_SNAP_ORIG', ''), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/achraf'), ('CHROME_DESKTOP', 'code.desktop'), ('LOCPATH_VSCODE_SNAP_ORIG', ''), ('TERM_PROGRAM_VERSION', '1.120.0'), ('DESKTOP_SESSION', 'ubuntu'), ('GTK_PATH', '/snap/code/240/usr/lib/x86_64-linux-gnu/gtk-3.0'), ('XDG_DATA_HOME_VSCODE_SNAP_ORIG', ''), ('GTK_IM_MODULE_FILE', '/home/achraf/snap/code/common/.cache/immodules/immodules.cache'), ('GIO_LAUNCHED_DESKTOP_FILE', '/var/lib/snapd/desktop/applications/code_code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('GSETTINGS_SCHEMA_DIR_VSCODE_SNAP_ORIG', ''), ('MANAGERPID', '1360'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '2642'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'achraf'), ('JOURNAL_STREAM', '8:35159'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_CONFIG_DIRS_VSCODE_SNAP_ORIG', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_SESSION_CLASS', 'user'), ('XDG_DATA_DIRS_VSCODE_SNAP_ORIG', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('USERNAME', 'achraf'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('FC_FONTATIONS', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/achraf-VirtualBox:@/tmp/.ICE-unix/1544,unix/achraf-VirtualBox:/tmp/.ICE-unix/1544'), ('GTK_EXE_PREFIX', '/snap/code/240/usr'), ('INVOCATION_ID', 'acc8039b44a04d7fb08e07b39205b097'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LOCPATH', '/snap/code/240/usr/lib/locale'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('GIO_MODULE_DIR_VSCODE_SNAP_ORIG', ''), ('XDG_DATA_HOME', '/home/achraf/snap/code/240/.local/share'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('GSETTINGS_SCHEMA_DIR', '/home/achraf/snap/code/240/.local/share/glib-2.0/schemas'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GTK_PATH_VSCODE_SNAP_ORIG', ''), ('FONTCONFIG_FILE', '/etc/fonts/fonts.conf'), ('GTK_IM_MODULE_FILE_VSCODE_SNAP_ORIG', ''), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/media/sf_inspection_bot_ws/src/build/inspection_bot_msgs'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/home/achraf/snap/code/240/.local/share:/home/achraf/snap/code/240:/snap/code/240/usr/share:/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[0.221700] (-) TimerEvent: {}
+[0.323537] (-) TimerEvent: {}
+[0.425178] (-) TimerEvent: {}
+[0.528247] (-) TimerEvent: {}
+[0.630084] (-) TimerEvent: {}
+[0.734470] (-) TimerEvent: {}
+[0.839032] (-) TimerEvent: {}
+[0.942293] (-) TimerEvent: {}
+[1.046464] (-) TimerEvent: {}
+[1.147543] (-) TimerEvent: {}
+[1.249002] (-) TimerEvent: {}
+[1.352463] (-) TimerEvent: {}
+[1.456040] (-) TimerEvent: {}
+[1.558379] (-) TimerEvent: {}
+[1.660587] (-) TimerEvent: {}
+[1.701289] (inspection_bot_msgs) StdoutLine: {'line': b'-- The C compiler identification is GNU 9.4.0\n'}
+[1.764962] (-) TimerEvent: {}
+[3.186027] (-) TimerEvent: {}
+[3.342796] (-) TimerEvent: {}
+[3.457826] (-) TimerEvent: {}
+[3.559903] (-) TimerEvent: {}
+[3.664250] (-) TimerEvent: {}
+[3.767028] (-) TimerEvent: {}
+[3.869983] (-) TimerEvent: {}
+[3.972645] (-) TimerEvent: {}
+[3.981531] (inspection_bot_msgs) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 9.4.0\n'}
+[4.031872] (inspection_bot_msgs) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc\n'}
+[4.074157] (-) TimerEvent: {}
+[4.175055] (-) TimerEvent: {}
+[4.278123] (-) TimerEvent: {}
+[4.382587] (-) TimerEvent: {}
+[4.484623] (-) TimerEvent: {}
+[4.587938] (-) TimerEvent: {}
+[4.690523] (-) TimerEvent: {}
+[4.792710] (-) TimerEvent: {}
+[4.896524] (-) TimerEvent: {}
+[4.911295] (inspection_bot_msgs) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc -- works\n'}
+[4.922951] (inspection_bot_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[4.996853] (-) TimerEvent: {}
+[5.099133] (-) TimerEvent: {}
+[5.200521] (-) TimerEvent: {}
+[5.310588] (-) TimerEvent: {}
+[5.412353] (inspection_bot_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[5.415848] (-) TimerEvent: {}
+[5.460622] (inspection_bot_msgs) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[5.463820] (inspection_bot_msgs) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[5.488723] (inspection_bot_msgs) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++\n'}
+[5.516277] (-) TimerEvent: {}
+[5.617384] (-) TimerEvent: {}
+[5.719430] (-) TimerEvent: {}
+[5.820955] (-) TimerEvent: {}
+[5.922973] (-) TimerEvent: {}
+[5.988514] (inspection_bot_msgs) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ -- works\n'}
+[5.999063] (inspection_bot_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[6.023402] (-) TimerEvent: {}
+[6.124332] (-) TimerEvent: {}
+[6.227449] (-) TimerEvent: {}
+[6.328732] (-) TimerEvent: {}
+[6.430657] (-) TimerEvent: {}
+[6.526074] (inspection_bot_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[6.531033] (-) TimerEvent: {}
+[6.554522] (inspection_bot_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[6.556966] (inspection_bot_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[6.604965] (inspection_bot_msgs) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[6.633028] (-) TimerEvent: {}
+[6.643327] (inspection_bot_msgs) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") \n'}
+[6.646416] (inspection_bot_msgs) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[6.734533] (-) TimerEvent: {}
+[6.839396] (-) TimerEvent: {}
+[6.943048] (-) TimerEvent: {}
+[7.060756] (-) TimerEvent: {}
+[7.162795] (-) TimerEvent: {}
+[7.182398] (inspection_bot_msgs) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.0.1 (/opt/ros/foxy/share/rosidl_default_generators/cmake)\n'}
+[7.203272] (inspection_bot_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[7.228016] (inspection_bot_msgs) StdoutLine: {'line': b'-- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)\n'}
+[7.262976] (-) TimerEvent: {}
+[7.364946] (-) TimerEvent: {}
+[7.466847] (-) TimerEvent: {}
+[7.534264] (inspection_bot_msgs) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  \n'}
+[7.567462] (-) TimerEvent: {}
+[7.579494] (inspection_bot_msgs) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/foxy/include  \n'}
+[7.699732] (-) TimerEvent: {}
+[7.703813] (inspection_bot_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[7.758388] (inspection_bot_msgs) StdoutLine: {'line': b'-- Found std_msgs: 2.0.5 (/opt/ros/foxy/share/std_msgs/cmake)\n'}
+[7.819459] (-) TimerEvent: {}
+[7.823181] (inspection_bot_msgs) StdoutLine: {'line': b'-- Found geometry_msgs: 2.0.5 (/opt/ros/foxy/share/geometry_msgs/cmake)\n'}
+[7.920892] (-) TimerEvent: {}
+[7.946792] (inspection_bot_msgs) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found version "3.8.10") \n'}
+[8.024336] (-) TimerEvent: {}
+[8.126140] (-) TimerEvent: {}
+[8.262563] (-) TimerEvent: {}
+[8.364508] (-) TimerEvent: {}
+[8.466962] (-) TimerEvent: {}
+[8.568646] (-) TimerEvent: {}
+[8.670639] (-) TimerEvent: {}
+[8.772279] (-) TimerEvent: {}
+[8.874447] (-) TimerEvent: {}
+[8.976865] (-) TimerEvent: {}
+[9.079204] (-) TimerEvent: {}
+[9.180439] (-) TimerEvent: {}
+[9.194368] (inspection_bot_msgs) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.9.2 (/opt/ros/foxy/share/ament_cmake_ros/cmake)\n'}
+[9.280907] (-) TimerEvent: {}
+[9.383824] (-) TimerEvent: {}
+[9.485548] (-) TimerEvent: {}
+[9.588370] (-) TimerEvent: {}
+[9.691059] (-) TimerEvent: {}
+[9.792600] (-) TimerEvent: {}
+[9.895871] (-) TimerEvent: {}
+[9.997568] (-) TimerEvent: {}
+[10.101348] (-) TimerEvent: {}
+[10.208041] (-) TimerEvent: {}
+[10.311027] (-) TimerEvent: {}
+[10.413062] (-) TimerEvent: {}
+[10.513877] (-) TimerEvent: {}
+[10.617071] (-) TimerEvent: {}
+[10.718685] (-) TimerEvent: {}
+[10.820565] (-) TimerEvent: {}
+[10.923006] (-) TimerEvent: {}
+[11.024175] (-) TimerEvent: {}
+[11.125788] (-) TimerEvent: {}
+[11.227854] (-) TimerEvent: {}
+[11.329632] (-) TimerEvent: {}
+[11.430157] (-) TimerEvent: {}
+[11.531359] (-) TimerEvent: {}
+[11.633056] (-) TimerEvent: {}
+[11.735488] (-) TimerEvent: {}
+[11.837406] (-) TimerEvent: {}
+[11.939237] (-) TimerEvent: {}
+[12.041129] (-) TimerEvent: {}
+[12.142932] (-) TimerEvent: {}
+[12.245211] (-) TimerEvent: {}
+[12.347157] (-) TimerEvent: {}
+[12.448003] (-) TimerEvent: {}
+[12.480300] (inspection_bot_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[12.561975] (-) TimerEvent: {}
+[12.664253] (-) TimerEvent: {}
+[12.815549] (-) TimerEvent: {}
+[12.916752] (-) TimerEvent: {}
+[13.018697] (-) TimerEvent: {}
+[13.119775] (-) TimerEvent: {}
+[13.220918] (-) TimerEvent: {}
+[13.323256] (-) TimerEvent: {}
+[13.424774] (-) TimerEvent: {}
+[13.526900] (-) TimerEvent: {}
+[13.629298] (-) TimerEvent: {}
+[13.730272] (-) TimerEvent: {}
+[13.831442] (-) TimerEvent: {}
+[13.933853] (-) TimerEvent: {}
+[14.034872] (-) TimerEvent: {}
+[14.137214] (-) TimerEvent: {}
+[14.239623] (-) TimerEvent: {}
+[14.341343] (-) TimerEvent: {}
+[14.442503] (-) TimerEvent: {}
+[14.544880] (-) TimerEvent: {}
+[14.646196] (-) TimerEvent: {}
+[14.662749] (inspection_bot_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[14.747804] (inspection_bot_msgs) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3.5") \n'}
+[14.751314] (-) TimerEvent: {}
+[14.755260] (inspection_bot_msgs) StdoutLine: {'line': b'-- Found python_cmake_module: 0.8.1 (/opt/ros/foxy/share/python_cmake_module/cmake)\n'}
+[14.833436] (inspection_bot_msgs) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.8.so (found suitable version "3.8.10", minimum required is "3.5") \n'}
+[14.836360] (inspection_bot_msgs) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[14.839916] (inspection_bot_msgs) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.8\n'}
+[14.842967] (inspection_bot_msgs) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.8.so\n'}
+[14.852993] (-) TimerEvent: {}
+[14.884269] (inspection_bot_msgs) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[14.953265] (-) TimerEvent: {}
+[15.055682] (-) TimerEvent: {}
+[15.158128] (-) TimerEvent: {}
+[15.259928] (-) TimerEvent: {}
+[15.361830] (-) TimerEvent: {}
+[15.463978] (-) TimerEvent: {}
+[15.565919] (-) TimerEvent: {}
+[15.667118] (-) TimerEvent: {}
+[15.770319] (-) TimerEvent: {}
+[15.872015] (-) TimerEvent: {}
+[15.973121] (-) TimerEvent: {}
+[16.074145] (-) TimerEvent: {}
+[16.175654] (-) TimerEvent: {}
+[16.217432] (inspection_bot_msgs) StdoutLine: {'line': b'-- Configuring done\n'}
+[16.276339] (-) TimerEvent: {}
+[16.384079] (-) TimerEvent: {}
+[16.488672] (-) TimerEvent: {}
+[16.589883] (-) TimerEvent: {}
+[16.692531] (-) TimerEvent: {}
+[16.794423] (-) TimerEvent: {}
+[16.895439] (-) TimerEvent: {}
+[16.997672] (-) TimerEvent: {}
+[17.099085] (-) TimerEvent: {}
+[17.201380] (-) TimerEvent: {}
+[17.302432] (-) TimerEvent: {}
+[17.404534] (-) TimerEvent: {}
+[17.505817] (-) TimerEvent: {}
+[17.606773] (-) TimerEvent: {}
+[18.417380] (-) TimerEvent: {}
+[18.432246] (inspection_bot_msgs) StdoutLine: {'line': b'-- Generating done\n'}
+[18.518085] (-) TimerEvent: {}
+[18.619056] (-) TimerEvent: {}
+[18.722800] (-) TimerEvent: {}
+[18.807324] (inspection_bot_msgs) StdoutLine: {'line': b'-- Build files have been written to: /media/sf_inspection_bot_ws/src/build/inspection_bot_msgs\n'}
+[18.824026] (inspection_bot_msgs) CommandEnded: {'returncode': 0}
+[18.827342] (-) TimerEvent: {}
+[18.828265] (inspection_bot_msgs) JobProgress: {'identifier': 'inspection_bot_msgs', 'progress': 'build'}
+[18.834559] (inspection_bot_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/media/sf_inspection_bot_ws/src/build/inspection_bot_msgs', '--', '-j3', '-l3'], 'cwd': '/media/sf_inspection_bot_ws/src/build/inspection_bot_msgs', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('PYTHONWARNINGS', 'ignore:::setuptools.command.install'), ('USER', 'achraf'), ('FONTCONFIG_PATH', '/etc/fonts'), ('GIO_MODULE_DIR', '/home/achraf/snap/code/common/.cache/gio-modules'), ('SSH_AGENT_PID', '1491'), ('XDG_SESSION_TYPE', 'x11'), ('GTK_EXE_PREFIX_VSCODE_SNAP_ORIG', ''), ('GDK_BACKEND_VSCODE_SNAP_ORIG', ''), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/achraf'), ('CHROME_DESKTOP', 'code.desktop'), ('LOCPATH_VSCODE_SNAP_ORIG', ''), ('TERM_PROGRAM_VERSION', '1.120.0'), ('DESKTOP_SESSION', 'ubuntu'), ('GTK_PATH', '/snap/code/240/usr/lib/x86_64-linux-gnu/gtk-3.0'), ('XDG_DATA_HOME_VSCODE_SNAP_ORIG', ''), ('GTK_IM_MODULE_FILE', '/home/achraf/snap/code/common/.cache/immodules/immodules.cache'), ('GIO_LAUNCHED_DESKTOP_FILE', '/var/lib/snapd/desktop/applications/code_code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('GSETTINGS_SCHEMA_DIR_VSCODE_SNAP_ORIG', ''), ('MANAGERPID', '1360'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '2642'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'achraf'), ('JOURNAL_STREAM', '8:35159'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_CONFIG_DIRS_VSCODE_SNAP_ORIG', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_SESSION_CLASS', 'user'), ('XDG_DATA_DIRS_VSCODE_SNAP_ORIG', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('USERNAME', 'achraf'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('FC_FONTATIONS', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/achraf-VirtualBox:@/tmp/.ICE-unix/1544,unix/achraf-VirtualBox:/tmp/.ICE-unix/1544'), ('GTK_EXE_PREFIX', '/snap/code/240/usr'), ('INVOCATION_ID', 'acc8039b44a04d7fb08e07b39205b097'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LOCPATH', '/snap/code/240/usr/lib/locale'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('GIO_MODULE_DIR_VSCODE_SNAP_ORIG', ''), ('XDG_DATA_HOME', '/home/achraf/snap/code/240/.local/share'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('GSETTINGS_SCHEMA_DIR', '/home/achraf/snap/code/240/.local/share/glib-2.0/schemas'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GTK_PATH_VSCODE_SNAP_ORIG', ''), ('FONTCONFIG_FILE', '/etc/fonts/fonts.conf'), ('GTK_IM_MODULE_FILE_VSCODE_SNAP_ORIG', ''), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/media/sf_inspection_bot_ws/src/build/inspection_bot_msgs'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/home/achraf/snap/code/240/.local/share:/home/achraf/snap/code/240:/snap/code/240/usr/share:/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[18.927858] (-) TimerEvent: {}
+[19.018203] (inspection_bot_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target inspection_bot_msgs__cpp\x1b[0m\n'}
+[19.028649] (inspection_bot_msgs) StdoutLine: {'line': b'[  3%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[19.032616] (-) TimerEvent: {}
+[19.113067] (inspection_bot_msgs) StdoutLine: {'line': b'[  6%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[19.139739] (-) TimerEvent: {}
+[19.248624] (-) TimerEvent: {}
+[19.353134] (-) TimerEvent: {}
+[19.459733] (-) TimerEvent: {}
+[19.564193] (-) TimerEvent: {}
+[19.618409] (inspection_bot_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target inspection_bot_msgs__rosidl_generator_c\x1b[0m\n'}
+[19.664486] (-) TimerEvent: {}
+[19.753853] (inspection_bot_msgs) StdoutLine: {'line': b'[  6%] Built target inspection_bot_msgs__cpp\n'}
+[19.764932] (-) TimerEvent: {}
+[19.842378] (inspection_bot_msgs) StdoutLine: {'line': b'[  9%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[19.849700] (inspection_bot_msgs) StdoutLine: {'line': b'[ 12%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[19.867726] (-) TimerEvent: {}
+[19.936557] (inspection_bot_msgs) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding C object CMakeFiles/inspection_bot_msgs__rosidl_generator_c.dir/rosidl_generator_c/inspection_bot_msgs/msg/detail/anomaly_event__functions.c.o\x1b[0m\n'}
+[19.974133] (-) TimerEvent: {}
+[20.084472] (-) TimerEvent: {}
+[20.198679] (-) TimerEvent: {}
+[20.303814] (-) TimerEvent: {}
+[20.408327] (-) TimerEvent: {}
+[20.505883] (inspection_bot_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target inspection_bot_msgs__rosidl_typesupport_introspection_cpp\x1b[0m\n'}
+[20.514280] (-) TimerEvent: {}
+[20.559031] (inspection_bot_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target inspection_bot_msgs__rosidl_typesupport_cpp\x1b[0m\n'}
+[20.615099] (-) TimerEvent: {}
+[20.717514] (-) TimerEvent: {}
+[20.750916] (inspection_bot_msgs) StdoutLine: {'line': b'[ 19%] \x1b[32m\x1b[1mLinking C shared library libinspection_bot_msgs__rosidl_generator_c.so\x1b[0m\n'}
+[20.818206] (-) TimerEvent: {}
+[20.824896] (inspection_bot_msgs) StdoutLine: {'line': b'[ 22%] \x1b[32mBuilding CXX object CMakeFiles/inspection_bot_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/inspection_bot_msgs/msg/detail/anomaly_event__type_support.cpp.o\x1b[0m\n'}
+[20.918985] (-) TimerEvent: {}
+[20.976188] (inspection_bot_msgs) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/inspection_bot_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/inspection_bot_msgs/msg/anomaly_event__type_support.cpp.o\x1b[0m\n'}
+[21.020234] (-) TimerEvent: {}
+[21.125130] (-) TimerEvent: {}
+[21.228249] (inspection_bot_msgs) StdoutLine: {'line': b'[ 25%] Built target inspection_bot_msgs__rosidl_generator_c\n'}
+[21.240053] (-) TimerEvent: {}
+[21.330538] (inspection_bot_msgs) StdoutLine: {'line': b'[ 29%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[21.342051] (-) TimerEvent: {}
+[21.444644] (-) TimerEvent: {}
+[21.578493] (-) TimerEvent: {}
+[21.823332] (-) TimerEvent: {}
+[21.934748] (-) TimerEvent: {}
+[21.970451] (inspection_bot_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target inspection_bot_msgs__rosidl_typesupport_fastrtps_cpp\x1b[0m\n'}
+[22.039688] (-) TimerEvent: {}
+[22.144854] (-) TimerEvent: {}
+[22.247789] (-) TimerEvent: {}
+[22.350675] (-) TimerEvent: {}
+[22.403233] (inspection_bot_msgs) StdoutLine: {'line': b'[ 32%] \x1b[32mBuilding CXX object CMakeFiles/inspection_bot_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/inspection_bot_msgs/msg/detail/dds_fastrtps/anomaly_event__type_support.cpp.o\x1b[0m\n'}
+[22.451783] (-) TimerEvent: {}
+[22.553287] (-) TimerEvent: {}
+[22.654592] (-) TimerEvent: {}
+[22.758661] (-) TimerEvent: {}
+[22.861674] (-) TimerEvent: {}
+[22.974719] (-) TimerEvent: {}
+[22.986693] (inspection_bot_msgs) StdoutLine: {'line': b'[ 35%] \x1b[32m\x1b[1mLinking CXX shared library libinspection_bot_msgs__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[23.075653] (-) TimerEvent: {}
+[23.080352] (inspection_bot_msgs) StdoutLine: {'line': b'[ 38%] \x1b[32m\x1b[1mLinking CXX shared library libinspection_bot_msgs__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[23.176330] (-) TimerEvent: {}
+[23.277864] (-) TimerEvent: {}
+[23.293434] (inspection_bot_msgs) StdoutLine: {'line': b'[ 38%] Built target inspection_bot_msgs__rosidl_typesupport_cpp\n'}
+[23.381946] (-) TimerEvent: {}
+[23.432584] (inspection_bot_msgs) StdoutLine: {'line': b'[ 41%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[23.489853] (-) TimerEvent: {}
+[23.516332] (inspection_bot_msgs) StdoutLine: {'line': b'[ 41%] Built target inspection_bot_msgs__rosidl_typesupport_introspection_cpp\n'}
+[23.590835] (-) TimerEvent: {}
+[23.692474] (-) TimerEvent: {}
+[23.709542] (inspection_bot_msgs) StdoutLine: {'line': b'[ 45%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[23.815319] (-) TimerEvent: {}
+[23.924811] (-) TimerEvent: {}
+[23.993045] (inspection_bot_msgs) StdoutLine: {'line': b'[ 48%] \x1b[32m\x1b[1mLinking CXX shared library libinspection_bot_msgs__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[24.025959] (-) TimerEvent: {}
+[24.112608] (inspection_bot_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target inspection_bot_msgs__rosidl_typesupport_introspection_c\x1b[0m\n'}
+[24.126078] (-) TimerEvent: {}
+[24.227590] (-) TimerEvent: {}
+[24.291104] (inspection_bot_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target inspection_bot_msgs__rosidl_typesupport_c\x1b[0m\n'}
+[24.327965] (-) TimerEvent: {}
+[24.429717] (-) TimerEvent: {}
+[24.531446] (-) TimerEvent: {}
+[24.543944] (inspection_bot_msgs) StdoutLine: {'line': b'[ 51%] \x1b[32mBuilding CXX object CMakeFiles/inspection_bot_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/inspection_bot_msgs/msg/anomaly_event__type_support.cpp.o\x1b[0m\n'}
+[24.575926] (inspection_bot_msgs) StdoutLine: {'line': b'[ 54%] \x1b[32mBuilding C object CMakeFiles/inspection_bot_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/inspection_bot_msgs/msg/detail/anomaly_event__type_support.c.o\x1b[0m\n'}
+[24.580284] (inspection_bot_msgs) StdoutLine: {'line': b'[ 54%] Built target inspection_bot_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[24.633384] (-) TimerEvent: {}
+[24.660890] (inspection_bot_msgs) StdoutLine: {'line': b'[ 58%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[24.733783] (-) TimerEvent: {}
+[24.767227] (inspection_bot_msgs) StdoutLine: {'line': b'[ 61%] \x1b[32m\x1b[1mLinking CXX shared library libinspection_bot_msgs__rosidl_typesupport_c.so\x1b[0m\n'}
+[24.818945] (inspection_bot_msgs) StdoutLine: {'line': b'[ 64%] \x1b[32m\x1b[1mLinking C shared library libinspection_bot_msgs__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[24.833891] (-) TimerEvent: {}
+[24.935781] (-) TimerEvent: {}
+[25.038526] (-) TimerEvent: {}
+[25.067682] (inspection_bot_msgs) StdoutLine: {'line': b'[ 64%] Built target inspection_bot_msgs__rosidl_typesupport_c\n'}
+[25.139118] (-) TimerEvent: {}
+[25.143884] (inspection_bot_msgs) StdoutLine: {'line': b'[ 64%] Built target inspection_bot_msgs__rosidl_typesupport_introspection_c\n'}
+[25.241720] (-) TimerEvent: {}
+[25.305686] (inspection_bot_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target inspection_bot_msgs__rosidl_typesupport_fastrtps_c\x1b[0m\n'}
+[25.342279] (-) TimerEvent: {}
+[25.443096] (-) TimerEvent: {}
+[25.547866] (-) TimerEvent: {}
+[25.603349] (inspection_bot_msgs) StdoutLine: {'line': b'[ 67%] \x1b[32mBuilding CXX object CMakeFiles/inspection_bot_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/inspection_bot_msgs/msg/detail/anomaly_event__type_support_c.cpp.o\x1b[0m\n'}
+[25.648077] (-) TimerEvent: {}
+[25.749184] (-) TimerEvent: {}
+[25.851115] (-) TimerEvent: {}
+[25.954273] (-) TimerEvent: {}
+[26.057715] (-) TimerEvent: {}
+[26.160103] (-) TimerEvent: {}
+[26.261318] (-) TimerEvent: {}
+[26.351790] (inspection_bot_msgs) StdoutLine: {'line': b'[ 70%] \x1b[32m\x1b[1mLinking CXX shared library libinspection_bot_msgs__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[26.362103] (-) TimerEvent: {}
+[26.464063] (-) TimerEvent: {}
+[26.565251] (-) TimerEvent: {}
+[26.617423] (inspection_bot_msgs) StdoutLine: {'line': b'[ 70%] Built target inspection_bot_msgs__rosidl_typesupport_fastrtps_c\n'}
+[26.649362] (inspection_bot_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target inspection_bot_msgs\x1b[0m\n'}
+[26.665485] (-) TimerEvent: {}
+[26.702389] (inspection_bot_msgs) StdoutLine: {'line': b'[ 70%] Built target inspection_bot_msgs\n'}
+[26.738475] (inspection_bot_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target inspection_bot_msgs__py\x1b[0m\n'}
+[26.765959] (-) TimerEvent: {}
+[26.789329] (inspection_bot_msgs) StdoutLine: {'line': b'[ 74%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[26.893822] (-) TimerEvent: {}
+[26.996803] (-) TimerEvent: {}
+[27.101327] (-) TimerEvent: {}
+[27.205658] (-) TimerEvent: {}
+[27.306474] (-) TimerEvent: {}
+[27.407732] (-) TimerEvent: {}
+[27.509887] (-) TimerEvent: {}
+[27.611434] (-) TimerEvent: {}
+[27.715131] (-) TimerEvent: {}
+[27.817355] (-) TimerEvent: {}
+[27.857647] (inspection_bot_msgs) StdoutLine: {'line': b'[ 74%] Built target inspection_bot_msgs__py\n'}
+[27.921959] (-) TimerEvent: {}
+[27.927896] (inspection_bot_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target inspection_bot_msgs__python\x1b[0m\n'}
+[28.022604] (-) TimerEvent: {}
+[28.124077] (-) TimerEvent: {}
+[28.226027] (-) TimerEvent: {}
+[28.327375] (-) TimerEvent: {}
+[28.429226] (-) TimerEvent: {}
+[28.531224] (-) TimerEvent: {}
+[28.633521] (-) TimerEvent: {}
+[28.634746] (inspection_bot_msgs) StdoutLine: {'line': b'[ 77%] \x1b[32mBuilding C object CMakeFiles/inspection_bot_msgs__python.dir/rosidl_generator_py/inspection_bot_msgs/msg/_anomaly_event_s.c.o\x1b[0m\n'}
+[28.734574] (-) TimerEvent: {}
+[28.835903] (-) TimerEvent: {}
+[28.937731] (-) TimerEvent: {}
+[29.028596] (inspection_bot_msgs) StdoutLine: {'line': b'[ 80%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/inspection_bot_msgs/libinspection_bot_msgs__python.so\x1b[0m\n'}
+[29.038151] (-) TimerEvent: {}
+[29.141014] (-) TimerEvent: {}
+[29.186759] (inspection_bot_msgs) StdoutLine: {'line': b'[ 80%] Built target inspection_bot_msgs__python\n'}
+[29.240697] (inspection_bot_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target inspection_bot_msgs__rosidl_typesupport_c__pyext\x1b[0m\n'}
+[29.243025] (-) TimerEvent: {}
+[29.246959] (inspection_bot_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target inspection_bot_msgs__rosidl_typesupport_fastrtps_c__pyext\x1b[0m\n'}
+[29.249032] (inspection_bot_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target inspection_bot_msgs__rosidl_typesupport_introspection_c__pyext\x1b[0m\n'}
+[29.344159] (-) TimerEvent: {}
+[29.447072] (-) TimerEvent: {}
+[29.548317] (-) TimerEvent: {}
+[29.649723] (-) TimerEvent: {}
+[29.750707] (-) TimerEvent: {}
+[29.852166] (-) TimerEvent: {}
+[29.877245] (inspection_bot_msgs) StdoutLine: {'line': b'[ 83%] \x1b[32mBuilding C object CMakeFiles/inspection_bot_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/inspection_bot_msgs/_inspection_bot_msgs_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[29.887160] (inspection_bot_msgs) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/inspection_bot_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/inspection_bot_msgs/_inspection_bot_msgs_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[29.955381] (-) TimerEvent: {}
+[30.057846] (-) TimerEvent: {}
+[30.159209] (-) TimerEvent: {}
+[30.226580] (inspection_bot_msgs) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding C object CMakeFiles/inspection_bot_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/inspection_bot_msgs/_inspection_bot_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[30.259532] (-) TimerEvent: {}
+[30.323924] (inspection_bot_msgs) StdoutLine: {'line': b'[ 93%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/inspection_bot_msgs/inspection_bot_msgs_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so\x1b[0m\n'}
+[30.360182] (-) TimerEvent: {}
+[30.413140] (inspection_bot_msgs) StdoutLine: {'line': b'[ 96%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/inspection_bot_msgs/inspection_bot_msgs_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so\x1b[0m\n'}
+[30.460860] (-) TimerEvent: {}
+[30.563896] (-) TimerEvent: {}
+[30.617672] (inspection_bot_msgs) StdoutLine: {'line': b'[ 96%] Built target inspection_bot_msgs__rosidl_typesupport_c__pyext\n'}
+[30.664442] (-) TimerEvent: {}
+[30.702525] (inspection_bot_msgs) StdoutLine: {'line': b'[ 96%] Built target inspection_bot_msgs__rosidl_typesupport_introspection_c__pyext\n'}
+[30.765440] (-) TimerEvent: {}
+[30.867351] (-) TimerEvent: {}
+[30.924292] (inspection_bot_msgs) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX shared library rosidl_generator_py/inspection_bot_msgs/inspection_bot_msgs_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so\x1b[0m\n'}
+[30.968460] (-) TimerEvent: {}
+[31.072279] (-) TimerEvent: {}
+[31.174534] (-) TimerEvent: {}
+[31.176351] (inspection_bot_msgs) StdoutLine: {'line': b'[100%] Built target inspection_bot_msgs__rosidl_typesupport_fastrtps_c__pyext\n'}
+[31.251161] (inspection_bot_msgs) CommandEnded: {'returncode': 0}
+[31.264704] (inspection_bot_msgs) JobProgress: {'identifier': 'inspection_bot_msgs', 'progress': 'install'}
+[31.278391] (-) TimerEvent: {}
+[31.294799] (inspection_bot_msgs) Command: {'cmd': ['/usr/bin/cmake', '--install', '/media/sf_inspection_bot_ws/src/build/inspection_bot_msgs'], 'cwd': '/media/sf_inspection_bot_ws/src/build/inspection_bot_msgs', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('PYTHONWARNINGS', 'ignore:::setuptools.command.install'), ('USER', 'achraf'), ('FONTCONFIG_PATH', '/etc/fonts'), ('GIO_MODULE_DIR', '/home/achraf/snap/code/common/.cache/gio-modules'), ('SSH_AGENT_PID', '1491'), ('XDG_SESSION_TYPE', 'x11'), ('GTK_EXE_PREFIX_VSCODE_SNAP_ORIG', ''), ('GDK_BACKEND_VSCODE_SNAP_ORIG', ''), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/achraf'), ('CHROME_DESKTOP', 'code.desktop'), ('LOCPATH_VSCODE_SNAP_ORIG', ''), ('TERM_PROGRAM_VERSION', '1.120.0'), ('DESKTOP_SESSION', 'ubuntu'), ('GTK_PATH', '/snap/code/240/usr/lib/x86_64-linux-gnu/gtk-3.0'), ('XDG_DATA_HOME_VSCODE_SNAP_ORIG', ''), ('GTK_IM_MODULE_FILE', '/home/achraf/snap/code/common/.cache/immodules/immodules.cache'), ('GIO_LAUNCHED_DESKTOP_FILE', '/var/lib/snapd/desktop/applications/code_code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('GSETTINGS_SCHEMA_DIR_VSCODE_SNAP_ORIG', ''), ('MANAGERPID', '1360'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '2642'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'achraf'), ('JOURNAL_STREAM', '8:35159'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_CONFIG_DIRS_VSCODE_SNAP_ORIG', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_SESSION_CLASS', 'user'), ('XDG_DATA_DIRS_VSCODE_SNAP_ORIG', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('USERNAME', 'achraf'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('FC_FONTATIONS', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/achraf-VirtualBox:@/tmp/.ICE-unix/1544,unix/achraf-VirtualBox:/tmp/.ICE-unix/1544'), ('GTK_EXE_PREFIX', '/snap/code/240/usr'), ('INVOCATION_ID', 'acc8039b44a04d7fb08e07b39205b097'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LOCPATH', '/snap/code/240/usr/lib/locale'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('GIO_MODULE_DIR_VSCODE_SNAP_ORIG', ''), ('XDG_DATA_HOME', '/home/achraf/snap/code/240/.local/share'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('GSETTINGS_SCHEMA_DIR', '/home/achraf/snap/code/240/.local/share/glib-2.0/schemas'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GTK_PATH_VSCODE_SNAP_ORIG', ''), ('FONTCONFIG_FILE', '/etc/fonts/fonts.conf'), ('GTK_IM_MODULE_FILE_VSCODE_SNAP_ORIG', ''), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/media/sf_inspection_bot_ws/src/build/inspection_bot_msgs'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/home/achraf/snap/code/240/.local/share:/home/achraf/snap/code/240:/snap/code/240/usr/share:/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[31.346143] (inspection_bot_msgs) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[31.376694] (inspection_bot_msgs) StdoutLine: {'line': b'-- Installing: /media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/share/ament_index/resource_index/rosidl_interfaces/inspection_bot_msgs\n'}
+[31.378736] (-) TimerEvent: {}
+[31.404558] (inspection_bot_msgs) StdoutLine: {'line': b'-- Installing: /media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/include/inspection_bot_msgs\n'}
+[31.416049] (inspection_bot_msgs) StdoutLine: {'line': b'-- Installing: /media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/include/inspection_bot_msgs/msg\n'}
+[31.426821] (inspection_bot_msgs) StdoutLine: {'line': b'-- Installing: /media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/include/inspection_bot_msgs/msg/anomaly_event.h\n'}
+[31.447945] (inspection_bot_msgs) StdoutLine: {'line': b'-- Installing: /media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/include/inspection_bot_msgs/msg/detail\n'}
+[31.459444] (inspection_bot_msgs) StdoutLine: {'line': b'-- Installing: /media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/include/inspection_bot_msgs/msg/detail/anomaly_event__functions.c\n'}
+[31.477248] (inspection_bot_msgs) StdoutLine: {'line': b'-- Installing: /media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/include/inspection_bot_msgs/msg/detail/anomaly_event__functions.h\n'}
+[31.479922] (-) TimerEvent: {}
+[31.488881] (inspection_bot_msgs) StdoutLine: {'line': b'-- Installing: /media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/include/inspection_bot_msgs/msg/detail/anomaly_event__struct.h\n'}
+[31.508532] (inspection_bot_msgs) StdoutLine: {'line': b'-- Installing: /media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/include/inspection_bot_msgs/msg/detail/anomaly_event__type_support.h\n'}
+[31.527691] (inspection_bot_msgs) StdoutLine: {'line': b'-- Installing: /media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/include/inspection_bot_msgs/msg/rosidl_generator_c__visibility_control.h\n'}
+[31.544721] (inspection_bot_msgs) StdoutLine: {'line': b'-- Installing: /media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/share/inspection_bot_msgs/environment/library_path.sh\n'}
+[31.565849] (inspection_bot_msgs) StdoutLine: {'line': b'-- Installing: /media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/share/inspection_bot_msgs/environment/library_path.dsv\n'}
+[31.580585] (-) TimerEvent: {}
+[31.586129] (inspection_bot_msgs) StdoutLine: {'line': b'-- Installing: /media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/lib/libinspection_bot_msgs__rosidl_generator_c.so\n'}
+[31.647501] (inspection_bot_msgs) StdoutLine: {'line': b'-- Set runtime path of "/media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/lib/libinspection_bot_msgs__rosidl_generator_c.so" to ""\n'}
+[31.650759] (inspection_bot_msgs) StdoutLine: {'line': b'-- Up-to-date: /media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/include/inspection_bot_msgs\n'}
+[31.655960] (inspection_bot_msgs) StdoutLine: {'line': b'-- Up-to-date: /media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/include/inspection_bot_msgs/msg\n'}
+[31.662312] (inspection_bot_msgs) StdoutLine: {'line': b'-- Up-to-date: /media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/include/inspection_bot_msgs/msg/detail\n'}
+[31.670539] (inspection_bot_msgs) StdoutLine: {'line': b'-- Installing: /media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/include/inspection_bot_msgs/msg/detail/anomaly_event__rosidl_typesupport_fastrtps_c.h\n'}
+[31.681103] (-) TimerEvent: {}
+[31.697005] (inspection_bot_msgs) StdoutLine: {'line': b'-- Installing: /media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/include/inspection_bot_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[31.712941] (inspection_bot_msgs) StdoutLine: {'line': b'-- Installing: /media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/lib/libinspection_bot_msgs__rosidl_typesupport_fastrtps_c.so\n'}
+[31.765900] (inspection_bot_msgs) StdoutLine: {'line': b'-- Set runtime path of "/media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/lib/libinspection_bot_msgs__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[31.770526] (inspection_bot_msgs) StdoutLine: {'line': b'-- Up-to-date: /media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/include/inspection_bot_msgs\n'}
+[31.776097] (inspection_bot_msgs) StdoutLine: {'line': b'-- Up-to-date: /media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/include/inspection_bot_msgs/msg\n'}
+[31.780997] (inspection_bot_msgs) StdoutLine: {'line': b'-- Up-to-date: /media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/include/inspection_bot_msgs/msg/detail\n'}
+[31.782877] (-) TimerEvent: {}
+[31.788779] (inspection_bot_msgs) StdoutLine: {'line': b'-- Installing: /media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/include/inspection_bot_msgs/msg/detail/anomaly_event__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[31.807615] (inspection_bot_msgs) StdoutLine: {'line': b'-- Installing: /media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/include/inspection_bot_msgs/msg/detail/dds_fastrtps\n'}
+[31.813741] (inspection_bot_msgs) StdoutLine: {'line': b'-- Installing: /media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/include/inspection_bot_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[31.828551] (inspection_bot_msgs) StdoutLine: {'line': b'-- Installing: /media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/lib/libinspection_bot_msgs__rosidl_typesupport_fastrtps_cpp.so\n'}
+[31.883413] (-) TimerEvent: {}
+[31.903502] (inspection_bot_msgs) StdoutLine: {'line': b'-- Set runtime path of "/media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/lib/libinspection_bot_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[31.909397] (inspection_bot_msgs) StdoutLine: {'line': b'-- Up-to-date: /media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/include/inspection_bot_msgs\n'}
+[31.911521] (inspection_bot_msgs) StdoutLine: {'line': b'-- Up-to-date: /media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/include/inspection_bot_msgs/msg\n'}
+[31.914530] (inspection_bot_msgs) StdoutLine: {'line': b'-- Up-to-date: /media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/include/inspection_bot_msgs/msg/detail\n'}
+[31.919429] (inspection_bot_msgs) StdoutLine: {'line': b'-- Installing: /media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/include/inspection_bot_msgs/msg/detail/anomaly_event__rosidl_typesupport_introspection_c.h\n'}
+[31.934188] (inspection_bot_msgs) StdoutLine: {'line': b'-- Installing: /media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/include/inspection_bot_msgs/msg/detail/anomaly_event__type_support.c\n'}
+[31.951871] (inspection_bot_msgs) StdoutLine: {'line': b'-- Installing: /media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/include/inspection_bot_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[31.967697] (inspection_bot_msgs) StdoutLine: {'line': b'-- Installing: /media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/lib/libinspection_bot_msgs__rosidl_typesupport_introspection_c.so\n'}
+[31.984186] (-) TimerEvent: {}
+[32.029307] (inspection_bot_msgs) StdoutLine: {'line': b'-- Set runtime path of "/media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/lib/libinspection_bot_msgs__rosidl_typesupport_introspection_c.so" to ""\n'}
+[32.032781] (inspection_bot_msgs) StdoutLine: {'line': b'-- Installing: /media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/lib/libinspection_bot_msgs__rosidl_typesupport_c.so\n'}
+[32.084704] (-) TimerEvent: {}
+[32.087851] (inspection_bot_msgs) StdoutLine: {'line': b'-- Set runtime path of "/media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/lib/libinspection_bot_msgs__rosidl_typesupport_c.so" to ""\n'}
+[32.090544] (inspection_bot_msgs) StdoutLine: {'line': b'-- Up-to-date: /media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/include/inspection_bot_msgs\n'}
+[32.095601] (inspection_bot_msgs) StdoutLine: {'line': b'-- Up-to-date: /media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/include/inspection_bot_msgs/msg\n'}
+[32.102134] (inspection_bot_msgs) StdoutLine: {'line': b'-- Installing: /media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/include/inspection_bot_msgs/msg/anomaly_event.hpp\n'}
+[32.122097] (inspection_bot_msgs) StdoutLine: {'line': b'-- Up-to-date: /media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/include/inspection_bot_msgs/msg/detail\n'}
+[32.127804] (inspection_bot_msgs) StdoutLine: {'line': b'-- Installing: /media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/include/inspection_bot_msgs/msg/detail/anomaly_event__builder.hpp\n'}
+[32.148393] (inspection_bot_msgs) StdoutLine: {'line': b'-- Installing: /media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/include/inspection_bot_msgs/msg/detail/anomaly_event__struct.hpp\n'}
+[32.170272] (inspection_bot_msgs) StdoutLine: {'line': b'-- Installing: /media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/include/inspection_bot_msgs/msg/detail/anomaly_event__traits.hpp\n'}
+[32.185350] (-) TimerEvent: {}
+[32.193499] (inspection_bot_msgs) StdoutLine: {'line': b'-- Installing: /media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/include/inspection_bot_msgs/msg/detail/anomaly_event__type_support.hpp\n'}
+[32.211540] (inspection_bot_msgs) StdoutLine: {'line': b'-- Installing: /media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/include/inspection_bot_msgs/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[32.229550] (inspection_bot_msgs) StdoutLine: {'line': b'-- Up-to-date: /media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/include/inspection_bot_msgs\n'}
+[32.234936] (inspection_bot_msgs) StdoutLine: {'line': b'-- Up-to-date: /media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/include/inspection_bot_msgs/msg\n'}
+[32.239754] (inspection_bot_msgs) StdoutLine: {'line': b'-- Up-to-date: /media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/include/inspection_bot_msgs/msg/detail\n'}
+[32.245571] (inspection_bot_msgs) StdoutLine: {'line': b'-- Installing: /media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/include/inspection_bot_msgs/msg/detail/anomaly_event__rosidl_typesupport_introspection_cpp.hpp\n'}
+[32.267383] (inspection_bot_msgs) StdoutLine: {'line': b'-- Installing: /media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/include/inspection_bot_msgs/msg/detail/anomaly_event__type_support.cpp\n'}
+[32.286149] (-) TimerEvent: {}
+[32.289853] (inspection_bot_msgs) StdoutLine: {'line': b'-- Installing: /media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/lib/libinspection_bot_msgs__rosidl_typesupport_introspection_cpp.so\n'}
+[32.369115] (inspection_bot_msgs) StdoutLine: {'line': b'-- Set runtime path of "/media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/lib/libinspection_bot_msgs__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[32.377465] (inspection_bot_msgs) StdoutLine: {'line': b'-- Installing: /media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/lib/libinspection_bot_msgs__rosidl_typesupport_cpp.so\n'}
+[32.387229] (-) TimerEvent: {}
+[32.449236] (inspection_bot_msgs) StdoutLine: {'line': b'-- Set runtime path of "/media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/lib/libinspection_bot_msgs__rosidl_typesupport_cpp.so" to ""\n'}
+[32.452999] (inspection_bot_msgs) StdoutLine: {'line': b'-- Installing: /media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/share/inspection_bot_msgs/environment/pythonpath.sh\n'}
+[32.473106] (inspection_bot_msgs) StdoutLine: {'line': b'-- Installing: /media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/share/inspection_bot_msgs/environment/pythonpath.dsv\n'}
+[32.487769] (-) TimerEvent: {}
+[32.499300] (inspection_bot_msgs) StdoutLine: {'line': b'-- Installing: /media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/lib/python3.8/site-packages/inspection_bot_msgs/__init__.py\n'}
+[32.583846] (inspection_bot_msgs) StdoutLine: {'line': b"Compiling '/media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/lib/python3.8/site-packages/inspection_bot_msgs/__init__.py'...\n"}
+[32.588868] (-) TimerEvent: {}
+[32.595556] (inspection_bot_msgs) StdoutLine: {'line': b'-- Installing: /media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/lib/python3.8/site-packages/inspection_bot_msgs/msg\n'}
+[32.600187] (inspection_bot_msgs) StdoutLine: {'line': b'-- Installing: /media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/lib/python3.8/site-packages/inspection_bot_msgs/msg/_anomaly_event.py\n'}
+[32.614770] (inspection_bot_msgs) StdoutLine: {'line': b'-- Installing: /media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/lib/python3.8/site-packages/inspection_bot_msgs/msg/_anomaly_event_s.c\n'}
+[32.635946] (inspection_bot_msgs) StdoutLine: {'line': b'-- Installing: /media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/lib/python3.8/site-packages/inspection_bot_msgs/msg/__init__.py\n'}
+[32.659754] (inspection_bot_msgs) StdoutLine: {'line': b'-- Installing: /media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/lib/python3.8/site-packages/inspection_bot_msgs/inspection_bot_msgs_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so\n'}
+[32.689353] (-) TimerEvent: {}
+[32.702555] (inspection_bot_msgs) StdoutLine: {'line': b'-- Set runtime path of "/media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/lib/python3.8/site-packages/inspection_bot_msgs/inspection_bot_msgs_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so" to ""\n'}
+[32.707002] (inspection_bot_msgs) StdoutLine: {'line': b'-- Installing: /media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/lib/python3.8/site-packages/inspection_bot_msgs/inspection_bot_msgs_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so\n'}
+[32.774366] (inspection_bot_msgs) StdoutLine: {'line': b'-- Set runtime path of "/media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/lib/python3.8/site-packages/inspection_bot_msgs/inspection_bot_msgs_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so" to ""\n'}
+[32.777377] (inspection_bot_msgs) StdoutLine: {'line': b'-- Installing: /media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/lib/python3.8/site-packages/inspection_bot_msgs/inspection_bot_msgs_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so\n'}
+[32.790020] (-) TimerEvent: {}
+[32.837848] (inspection_bot_msgs) StdoutLine: {'line': b'-- Set runtime path of "/media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/lib/python3.8/site-packages/inspection_bot_msgs/inspection_bot_msgs_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so" to ""\n'}
+[32.846116] (inspection_bot_msgs) StdoutLine: {'line': b'-- Installing: /media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/lib/libinspection_bot_msgs__python.so\n'}
+[32.890280] (-) TimerEvent: {}
+[32.922240] (inspection_bot_msgs) StdoutLine: {'line': b'-- Set runtime path of "/media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/lib/libinspection_bot_msgs__python.so" to ""\n'}
+[32.930132] (inspection_bot_msgs) StdoutLine: {'line': b'-- Installing: /media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/share/inspection_bot_msgs/msg/AnomalyEvent.idl\n'}
+[32.949529] (inspection_bot_msgs) StdoutLine: {'line': b'-- Installing: /media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/share/inspection_bot_msgs/msg/AnomalyEvent.msg\n'}
+[32.976379] (inspection_bot_msgs) StdoutLine: {'line': b'-- Installing: /media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/share/ament_index/resource_index/package_run_dependencies/inspection_bot_msgs\n'}
+[32.990572] (-) TimerEvent: {}
+[32.998425] (inspection_bot_msgs) StdoutLine: {'line': b'-- Installing: /media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/share/ament_index/resource_index/parent_prefix_path/inspection_bot_msgs\n'}
+[33.019240] (inspection_bot_msgs) StdoutLine: {'line': b'-- Installing: /media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/share/inspection_bot_msgs/environment/ament_prefix_path.sh\n'}
+[33.036523] (inspection_bot_msgs) StdoutLine: {'line': b'-- Installing: /media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/share/inspection_bot_msgs/environment/ament_prefix_path.dsv\n'}
+[33.053368] (inspection_bot_msgs) StdoutLine: {'line': b'-- Installing: /media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/share/inspection_bot_msgs/environment/path.sh\n'}
+[33.078899] (inspection_bot_msgs) StdoutLine: {'line': b'-- Installing: /media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/share/inspection_bot_msgs/environment/path.dsv\n'}
+[33.091197] (-) TimerEvent: {}
+[33.097207] (inspection_bot_msgs) StdoutLine: {'line': b'-- Installing: /media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/share/inspection_bot_msgs/local_setup.bash\n'}
+[33.119757] (inspection_bot_msgs) StdoutLine: {'line': b'-- Installing: /media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/share/inspection_bot_msgs/local_setup.sh\n'}
+[33.145518] (inspection_bot_msgs) StdoutLine: {'line': b'-- Installing: /media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/share/inspection_bot_msgs/local_setup.zsh\n'}
+[33.166733] (inspection_bot_msgs) StdoutLine: {'line': b'-- Installing: /media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/share/inspection_bot_msgs/local_setup.dsv\n'}
+[33.189895] (inspection_bot_msgs) StdoutLine: {'line': b'-- Installing: /media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/share/inspection_bot_msgs/package.dsv\n'}
+[33.193503] (-) TimerEvent: {}
+[33.220352] (inspection_bot_msgs) StdoutLine: {'line': b'-- Installing: /media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/share/ament_index/resource_index/packages/inspection_bot_msgs\n'}
+[33.241738] (inspection_bot_msgs) StdoutLine: {'line': b'-- Installing: /media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/share/inspection_bot_msgs/cmake/inspection_bot_msgs__rosidl_generator_cExport.cmake\n'}
+[33.265029] (inspection_bot_msgs) StdoutLine: {'line': b'-- Installing: /media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/share/inspection_bot_msgs/cmake/inspection_bot_msgs__rosidl_generator_cExport-noconfig.cmake\n'}
+[33.279911] (inspection_bot_msgs) StdoutLine: {'line': b'-- Installing: /media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/share/inspection_bot_msgs/cmake/inspection_bot_msgs__rosidl_typesupport_introspection_cExport.cmake\n'}
+[33.294347] (-) TimerEvent: {}
+[33.301392] (inspection_bot_msgs) StdoutLine: {'line': b'-- Installing: /media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/share/inspection_bot_msgs/cmake/inspection_bot_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[33.328486] (inspection_bot_msgs) StdoutLine: {'line': b'-- Installing: /media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/share/inspection_bot_msgs/cmake/inspection_bot_msgs__rosidl_typesupport_cExport.cmake\n'}
+[33.347100] (inspection_bot_msgs) StdoutLine: {'line': b'-- Installing: /media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/share/inspection_bot_msgs/cmake/inspection_bot_msgs__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[33.364649] (inspection_bot_msgs) StdoutLine: {'line': b'-- Installing: /media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/share/inspection_bot_msgs/cmake/inspection_bot_msgs__rosidl_generator_cppExport.cmake\n'}
+[33.380215] (inspection_bot_msgs) StdoutLine: {'line': b'-- Installing: /media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/share/inspection_bot_msgs/cmake/inspection_bot_msgs__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[33.395076] (-) TimerEvent: {}
+[33.398439] (inspection_bot_msgs) StdoutLine: {'line': b'-- Installing: /media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/share/inspection_bot_msgs/cmake/inspection_bot_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[33.416391] (inspection_bot_msgs) StdoutLine: {'line': b'-- Installing: /media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/share/inspection_bot_msgs/cmake/inspection_bot_msgs__rosidl_typesupport_cppExport.cmake\n'}
+[33.435640] (inspection_bot_msgs) StdoutLine: {'line': b'-- Installing: /media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/share/inspection_bot_msgs/cmake/inspection_bot_msgs__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[33.455078] (inspection_bot_msgs) StdoutLine: {'line': b'-- Installing: /media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/share/inspection_bot_msgs/cmake/rosidl_cmake-extras.cmake\n'}
+[33.473749] (inspection_bot_msgs) StdoutLine: {'line': b'-- Installing: /media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/share/inspection_bot_msgs/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[33.494521] (inspection_bot_msgs) StdoutLine: {'line': b'-- Installing: /media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/share/inspection_bot_msgs/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[33.496820] (-) TimerEvent: {}
+[33.514488] (inspection_bot_msgs) StdoutLine: {'line': b'-- Installing: /media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/share/inspection_bot_msgs/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[33.526949] (inspection_bot_msgs) StdoutLine: {'line': b'-- Installing: /media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/share/inspection_bot_msgs/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[33.542431] (inspection_bot_msgs) StdoutLine: {'line': b'-- Installing: /media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/share/inspection_bot_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[33.566744] (inspection_bot_msgs) StdoutLine: {'line': b'-- Installing: /media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/share/inspection_bot_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[33.585351] (inspection_bot_msgs) StdoutLine: {'line': b'-- Installing: /media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/share/inspection_bot_msgs/cmake/inspection_bot_msgsConfig.cmake\n'}
+[33.597175] (-) TimerEvent: {}
+[33.601274] (inspection_bot_msgs) StdoutLine: {'line': b'-- Installing: /media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/share/inspection_bot_msgs/cmake/inspection_bot_msgsConfig-version.cmake\n'}
+[33.621301] (inspection_bot_msgs) StdoutLine: {'line': b'-- Installing: /media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/share/inspection_bot_msgs/package.xml\n'}
+[33.669161] (inspection_bot_msgs) CommandEnded: {'returncode': 0}
+[33.697478] (-) TimerEvent: {}
+[33.802289] (-) TimerEvent: {}
+[33.997391] (-) TimerEvent: {}
+[34.109559] (-) TimerEvent: {}
+[34.211292] (-) TimerEvent: {}
+[34.312433] (-) TimerEvent: {}
+[34.407205] (inspection_bot_msgs) JobEnded: {'identifier': 'inspection_bot_msgs', 'rc': 0}
+[34.423829] (-) TimerEvent: {}
+[34.426104] (-) EventReactorShutdown: {}

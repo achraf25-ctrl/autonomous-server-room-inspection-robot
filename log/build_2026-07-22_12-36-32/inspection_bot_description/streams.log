@@ -1,0 +1,27 @@
+[0.296s] Invoking command in '/media/sf_inspection_bot_ws/build/inspection_bot_description': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /media/sf_inspection_bot_ws/src/inspection_bot_description -DCMAKE_INSTALL_PREFIX=/media/sf_inspection_bot_ws/install/inspection_bot_description
+[1.277s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[1.321s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.779s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[2.403s] -- Configuring done
+[2.644s] -- Generating done
+[2.824s] -- Build files have been written to: /media/sf_inspection_bot_ws/build/inspection_bot_description
+[2.906s] Invoked command in '/media/sf_inspection_bot_ws/build/inspection_bot_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /media/sf_inspection_bot_ws/src/inspection_bot_description -DCMAKE_INSTALL_PREFIX=/media/sf_inspection_bot_ws/install/inspection_bot_description
+[2.926s] Invoking command in '/media/sf_inspection_bot_ws/build/inspection_bot_description': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /media/sf_inspection_bot_ws/build/inspection_bot_description -- -j3 -l3
+[3.317s] Invoked command in '/media/sf_inspection_bot_ws/build/inspection_bot_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /media/sf_inspection_bot_ws/build/inspection_bot_description -- -j3 -l3
+[3.393s] Invoking command in '/media/sf_inspection_bot_ws/build/inspection_bot_description': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /media/sf_inspection_bot_ws/build/inspection_bot_description
+[3.451s] -- Install configuration: ""
+[3.477s] -- Execute custom install script
+[3.506s] -- Symlinking: /media/sf_inspection_bot_ws/install/inspection_bot_description/share/inspection_bot_description/worlds/server_room.world
+[3.574s] CMake Error: failed to create symbolic link '/media/sf_inspection_bot_ws/install/inspection_bot_description/share/inspection_bot_description/worlds/server_room.world': operation not permitted
+[3.593s] CMake Error at ament_cmake_symlink_install/ament_cmake_symlink_install.cmake:302 (message):
+[3.595s]   Could not create symlink
+[3.599s]   '/media/sf_inspection_bot_ws/install/inspection_bot_description/share/inspection_bot_description/worlds/server_room.world'
+[3.601s]   pointing to
+[3.606s]   '/media/sf_inspection_bot_ws/src/inspection_bot_description/worlds/server_room.world'
+[3.608s] Call Stack (most recent call first):
+[3.610s]   ament_cmake_symlink_install/ament_cmake_symlink_install.cmake:96 (_ament_cmake_symlink_install_create_symlink)
+[3.612s]   ament_cmake_symlink_install/ament_cmake_symlink_install.cmake:314 (ament_cmake_symlink_install_directory)
+[3.614s]   cmake_install.cmake:41 (include)
+[3.619s] 
+[3.620s] 
+[3.625s] Invoked command in '/media/sf_inspection_bot_ws/build/inspection_bot_description' returned '1': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /media/sf_inspection_bot_ws/build/inspection_bot_description

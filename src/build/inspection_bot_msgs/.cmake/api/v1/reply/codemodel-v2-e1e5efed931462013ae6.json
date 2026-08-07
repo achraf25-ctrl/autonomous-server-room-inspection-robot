@@ -1,0 +1,213 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.8"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15
+					]
+				},
+				{
+					"build" : "inspection_bot_msgs__py",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.8"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/media/sf_inspection_bot_ws/src/build/inspection_bot_msgs/inspection_bot_msgs__py",
+					"targetIndexes" : 
+					[
+						2
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1
+					],
+					"name" : "inspection_bot_msgs",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "inspection_bot_msgs::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-inspection_bot_msgs-ca66799c8268457c6d10.json",
+					"name" : "inspection_bot_msgs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "inspection_bot_msgs__cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-inspection_bot_msgs__cpp-e027853e1fea2652cf7a.json",
+					"name" : "inspection_bot_msgs__cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "inspection_bot_msgs__py::@3383e4f5f8eea139bd76",
+					"jsonFile" : "target-inspection_bot_msgs__py-6196ad1ba5b3600d7e59.json",
+					"name" : "inspection_bot_msgs__py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "inspection_bot_msgs__python::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-inspection_bot_msgs__python-f132984e8240f8b06acc.json",
+					"name" : "inspection_bot_msgs__python",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "inspection_bot_msgs__rosidl_generator_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-inspection_bot_msgs__rosidl_generator_c-dda198a4b4553753cd47.json",
+					"name" : "inspection_bot_msgs__rosidl_generator_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "inspection_bot_msgs__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-inspection_bot_msgs__rosidl_typesupport_c-6b780ed202bb5de54d0c.json",
+					"name" : "inspection_bot_msgs__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "inspection_bot_msgs__rosidl_typesupport_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-inspection_bot_msgs__rosidl_typesupport_c__pyext-0b7a1c65146dcc3343a6.json",
+					"name" : "inspection_bot_msgs__rosidl_typesupport_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "inspection_bot_msgs__rosidl_typesupport_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-inspection_bot_msgs__rosidl_typesupport_cpp-a20303b44d57627a2a4b.json",
+					"name" : "inspection_bot_msgs__rosidl_typesupport_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "inspection_bot_msgs__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-inspection_bot_msgs__rosidl_typesupport_fastrtps_c-a634cc672d757e7c69b4.json",
+					"name" : "inspection_bot_msgs__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "inspection_bot_msgs__rosidl_typesupport_fastrtps_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-inspection_bot_msgs__rosidl_typesupport_fastrtps_c__pyext-f33ee71acddf0b26e8ea.json",
+					"name" : "inspection_bot_msgs__rosidl_typesupport_fastrtps_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "inspection_bot_msgs__rosidl_typesupport_fastrtps_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-inspection_bot_msgs__rosidl_typesupport_fastrtps_cpp-e218464afa3381d0d026.json",
+					"name" : "inspection_bot_msgs__rosidl_typesupport_fastrtps_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "inspection_bot_msgs__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-inspection_bot_msgs__rosidl_typesupport_introspection_c-87073435f739537c59e8.json",
+					"name" : "inspection_bot_msgs__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "inspection_bot_msgs__rosidl_typesupport_introspection_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-inspection_bot_msgs__rosidl_typesupport_introspection_c__pyext-af1e7584e2fff10af331.json",
+					"name" : "inspection_bot_msgs__rosidl_typesupport_introspection_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "inspection_bot_msgs__rosidl_typesupport_introspection_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-inspection_bot_msgs__rosidl_typesupport_introspection_cpp-86c62874820a9c261bb0.json",
+					"name" : "inspection_bot_msgs__rosidl_typesupport_introspection_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "inspection_bot_msgs_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-inspection_bot_msgs_uninstall-4e6b7ceda1c0613d4fad.json",
+					"name" : "inspection_bot_msgs_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-b36cd24c5bce197b836d.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/media/sf_inspection_bot_ws/src/build/inspection_bot_msgs",
+		"source" : "/media/sf_inspection_bot_ws/src/inspection_bot_msgs"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 0
+	}
+}

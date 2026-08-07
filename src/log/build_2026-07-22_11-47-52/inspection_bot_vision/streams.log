@@ -1,0 +1,40 @@
+[4.058s] Invoking command in '/media/sf_inspection_bot_ws/src/inspection_bot_vision': AMENT_PREFIX_PATH=/media/sf_inspection_bot_ws/src/install/inspection_bot_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/media/sf_inspection_bot_ws/src/install/inspection_bot_msgs LD_LIBRARY_PATH=/media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/media/sf_inspection_bot_ws/src/build/inspection_bot_vision/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/media/sf_inspection_bot_ws/src/install/inspection_bot_vision/lib/python3.8/site-packages:/media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/inspection_bot_vision build --build-base /media/sf_inspection_bot_ws/src/build/inspection_bot_vision/build install --record /media/sf_inspection_bot_ws/src/build/inspection_bot_vision/install.log --single-version-externally-managed install_data
+[4.379s] running egg_info
+[4.381s] creating ../build/inspection_bot_vision/inspection_bot_vision.egg-info
+[4.386s] writing ../build/inspection_bot_vision/inspection_bot_vision.egg-info/PKG-INFO
+[4.396s] writing dependency_links to ../build/inspection_bot_vision/inspection_bot_vision.egg-info/dependency_links.txt
+[4.400s] writing entry points to ../build/inspection_bot_vision/inspection_bot_vision.egg-info/entry_points.txt
+[4.404s] writing requirements to ../build/inspection_bot_vision/inspection_bot_vision.egg-info/requires.txt
+[4.409s] writing top-level names to ../build/inspection_bot_vision/inspection_bot_vision.egg-info/top_level.txt
+[4.427s] writing manifest file '../build/inspection_bot_vision/inspection_bot_vision.egg-info/SOURCES.txt'
+[4.507s] reading manifest file '../build/inspection_bot_vision/inspection_bot_vision.egg-info/SOURCES.txt'
+[4.516s] writing manifest file '../build/inspection_bot_vision/inspection_bot_vision.egg-info/SOURCES.txt'
+[4.521s] running build
+[4.524s] running build_py
+[4.528s] creating /media/sf_inspection_bot_ws/src/build/inspection_bot_vision/build
+[4.532s] creating /media/sf_inspection_bot_ws/src/build/inspection_bot_vision/build/lib
+[4.536s] creating /media/sf_inspection_bot_ws/src/build/inspection_bot_vision/build/lib/inspection_bot_vision
+[4.539s] copying inspection_bot_vision/anomaly_detector.py -> /media/sf_inspection_bot_ws/src/build/inspection_bot_vision/build/lib/inspection_bot_vision
+[4.550s] copying inspection_bot_vision/detectors.py -> /media/sf_inspection_bot_ws/src/build/inspection_bot_vision/build/lib/inspection_bot_vision
+[4.562s] copying inspection_bot_vision/__init__.py -> /media/sf_inspection_bot_ws/src/build/inspection_bot_vision/build/lib/inspection_bot_vision
+[4.579s] running install
+[4.597s] running install_lib
+[4.610s] creating /media/sf_inspection_bot_ws/src/install/inspection_bot_vision/lib/python3.8/site-packages/inspection_bot_vision
+[4.618s] copying /media/sf_inspection_bot_ws/src/build/inspection_bot_vision/build/lib/inspection_bot_vision/anomaly_detector.py -> /media/sf_inspection_bot_ws/src/install/inspection_bot_vision/lib/python3.8/site-packages/inspection_bot_vision
+[4.627s] copying /media/sf_inspection_bot_ws/src/build/inspection_bot_vision/build/lib/inspection_bot_vision/detectors.py -> /media/sf_inspection_bot_ws/src/install/inspection_bot_vision/lib/python3.8/site-packages/inspection_bot_vision
+[4.639s] copying /media/sf_inspection_bot_ws/src/build/inspection_bot_vision/build/lib/inspection_bot_vision/__init__.py -> /media/sf_inspection_bot_ws/src/install/inspection_bot_vision/lib/python3.8/site-packages/inspection_bot_vision
+[4.651s] byte-compiling /media/sf_inspection_bot_ws/src/install/inspection_bot_vision/lib/python3.8/site-packages/inspection_bot_vision/anomaly_detector.py to anomaly_detector.cpython-38.pyc
+[4.664s] byte-compiling /media/sf_inspection_bot_ws/src/install/inspection_bot_vision/lib/python3.8/site-packages/inspection_bot_vision/detectors.py to detectors.cpython-38.pyc
+[4.681s] byte-compiling /media/sf_inspection_bot_ws/src/install/inspection_bot_vision/lib/python3.8/site-packages/inspection_bot_vision/__init__.py to __init__.cpython-38.pyc
+[4.690s] running install_data
+[4.701s] creating /media/sf_inspection_bot_ws/src/install/inspection_bot_vision/share/ament_index
+[4.704s] creating /media/sf_inspection_bot_ws/src/install/inspection_bot_vision/share/ament_index/resource_index
+[4.711s] creating /media/sf_inspection_bot_ws/src/install/inspection_bot_vision/share/ament_index/resource_index/packages
+[4.719s] copying resource/inspection_bot_vision -> /media/sf_inspection_bot_ws/src/install/inspection_bot_vision/share/ament_index/resource_index/packages
+[4.739s] copying package.xml -> /media/sf_inspection_bot_ws/src/install/inspection_bot_vision/share/inspection_bot_vision
+[4.748s] running install_egg_info
+[4.757s] Copying ../build/inspection_bot_vision/inspection_bot_vision.egg-info to /media/sf_inspection_bot_ws/src/install/inspection_bot_vision/lib/python3.8/site-packages/inspection_bot_vision-0.1.0-py3.8.egg-info
+[4.854s] running install_scripts
+[4.896s] Installing anomaly_detector script to /media/sf_inspection_bot_ws/src/install/inspection_bot_vision/lib/inspection_bot_vision
+[4.912s] writing list of installed files to '/media/sf_inspection_bot_ws/src/build/inspection_bot_vision/install.log'
+[4.963s] Invoked command in '/media/sf_inspection_bot_ws/src/inspection_bot_vision' returned '0': AMENT_PREFIX_PATH=/media/sf_inspection_bot_ws/src/install/inspection_bot_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/media/sf_inspection_bot_ws/src/install/inspection_bot_msgs LD_LIBRARY_PATH=/media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/media/sf_inspection_bot_ws/src/build/inspection_bot_vision/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/media/sf_inspection_bot_ws/src/install/inspection_bot_vision/lib/python3.8/site-packages:/media/sf_inspection_bot_ws/src/install/inspection_bot_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/inspection_bot_vision build --build-base /media/sf_inspection_bot_ws/src/build/inspection_bot_vision/build install --record /media/sf_inspection_bot_ws/src/build/inspection_bot_vision/install.log --single-version-externally-managed install_data

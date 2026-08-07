@@ -1,0 +1,3 @@
+[console_scripts]
+anomaly_detector = inspection_bot_vision.anomaly_detector:main
+

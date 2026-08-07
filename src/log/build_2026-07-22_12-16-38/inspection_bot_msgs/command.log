@@ -1,0 +1,1 @@
+Invoking command in '/media/sf_inspection_bot_ws/src/build/inspection_bot_msgs': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /media/sf_inspection_bot_ws/src/inspection_bot_msgs -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/media/sf_inspection_bot_ws/src/install/inspection_bot_msgs
