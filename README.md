@@ -100,7 +100,8 @@ graph TD
 
 ### Live Inspection Running in RViz
 
-![RViz SLAM Navigation](screenshots/rviz_slam_navigation.png)
+![RViz SLAM Navigation](<img width="1698" height="926" alt="ChatGPT Image 28 juil  2026, 00_48_51" src="https://github.com/user-attachments/assets/a0169269-325b-41a7-956d-bf5742e1c049" />
+)
 
 The screenshot above shows the **complete system running live**:
 
