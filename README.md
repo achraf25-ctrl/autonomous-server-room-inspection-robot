@@ -100,7 +100,7 @@ graph TD
 
 ### Live Inspection Running in RViz
 
-![RViz SLAM Navigation](screenshots/scre1.png)
+![RViz SLAM Navigation](screenshots/slam_map.png)
 
 The screenshot above shows the **complete system running live**:
 
