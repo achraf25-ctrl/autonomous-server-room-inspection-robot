@@ -1,1 +1,0 @@
-/media/sf_inspection_bot_ws/src/install/inspection_bot_description/share/inspection_bot_description/worlds/server_room.world

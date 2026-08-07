@@ -1,4 +1,0 @@
-[console_scripts]
-inspection_commander = inspection_bot_nav.inspection_commander:main
-tsp_planner = inspection_bot_nav.tsp_planner:main
-
