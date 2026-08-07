@@ -1,0 +1,39 @@
+# ROS 2 build artifacts
+build/
+install/
+log/
+*.pyc
+__pycache__/
+
+# Python
+*.egg-info/
+dist/
+.eggs/
+venv/
+env/
+.env
+
+# Gazebo
+*.bag
+*.db3
+
+# Reports
+dashboard/reports/*.pdf
+
+# System files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# Docker
+.dockerignore
+
+# IDE
+.vscode/
+.idea/
+
+# Large model files
+*.pt
+*.pth
+*.weights
