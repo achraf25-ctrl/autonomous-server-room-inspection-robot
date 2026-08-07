@@ -9,7 +9,6 @@
 ![Flask](https://img.shields.io/badge/Dashboard-Flask%20%2B%20SocketIO-black?logo=flask)
 ![MQTT](https://img.shields.io/badge/Messaging-MQTT%20Mosquitto-purple)
 ![Docker](https://img.shields.io/badge/Deployment-Docker%20Compose-blue?logo=docker)
-![License](https://img.shields.io/badge/License-MIT-yellow)
 
 **An AI-powered autonomous mobile robot that patrols server rooms, detects anomalies using computer vision, and generates automated PDF inspection reports — all in real-time.**
 
@@ -413,11 +412,7 @@ Reports saved as: `reports/inspection_report_YYYYMMDD_HHMMSS.pdf`
 - [ ] Integration with DCIM (Data Center Infrastructure Management) systems
 - [ ] ROS 2 Action Server for inspection missions
 
----
 
-## 📜 License
-
-This project is licensed under the **MIT License** — see the [LICENSE](LICENSE) file for details.
 
 ---
 
